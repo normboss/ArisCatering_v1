@@ -123,7 +123,7 @@ function resizeImage($filename)
 
 function rotateImage($filename)
 {
-    $degrees = 90;
+    $degrees = -90;
     // Load
     $source = imagecreatefromjpeg($filename);
     // Rotate
