@@ -1,0 +1,709 @@
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme+Expanded&family=Leckerli+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme+Expanded&family=Leckerli+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@font-face {
+  font-family: remedy;
+  src: local("C:/xampp/htdocs/ArisCatering/files/fonts/Funstuff-Bold.ttf.woff");
+}
+
+@font-face {
+  font-family: "Funstuff-Bold";
+  src: url("Funstuff-Bold.ttf.woff") format("woff"), url("Funstuff-Bold.ttf.svg#Funstuff-Bold") format("svg"), url("Funstuff-Bold.ttf.eot"), url("Funstuff-Bold.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CHAWP;
+  src: url("chawp.otf");
+  src: url("chawp.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Blenda Script";
+  src: url("Blenda Script.otf");
+}
+
+@font-face {
+  font-family: remedy;
+  src: local("C:/xampp/htdocs/ArisCatering/files/fonts/Funstuff-Bold.ttf.woff");
+}
+
+@font-face {
+  font-family: "Funstuff-Bold";
+  src: url("Funstuff-Bold.ttf.woff") format("woff"), url("Funstuff-Bold.ttf.svg#Funstuff-Bold") format("svg"), url("Funstuff-Bold.ttf.eot"), url("Funstuff-Bold.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CHAWP;
+  src: url("chawp.otf");
+  src: url("chawp.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+  min-width: 300px;
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+main .top-section {
+  background-color: #0000004d;
+  width: 100%;
+  min-width: 900px;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  main .top-section {
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+    min-width: 300px;
+  }
+}
+
+main .top-section .left-part {
+  width: 40%;
+  position: relative;
+  padding-left: 100px;
+  display: grid;
+  grid-template-areas: "cookin logo blank" "cookin logo blank" "catering catering catering" "hollis hollis hollis";
+}
+
+@media screen and (max-width: 1200px) {
+  main .top-section .left-part {
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  main .top-section .left-part {
+    padding-left: 25px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main .top-section .left-part {
+    width: 80%;
+    padding-left: 0;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .top-section .left-part {
+    padding-left: 0px;
+    width: 95%;
+  }
+}
+
+main .top-section .left-part .cookin {
+  grid-area: cookin;
+  padding-right: 25px;
+  text-align: left;
+  font: normal normal normal 65px/65px HucklebuckJF;
+  font-family: "Leckerli One", cursive;
+  letter-spacing: 0px;
+  color: #f23816;
+  opacity: 1;
+  align-self: end;
+  justify-self: start;
+  padding-left: 0;
+}
+
+@media screen and (max-width: 1100px) {
+  main .top-section .left-part .cookin {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .top-section .left-part .cookin {
+    font-size: 35px;
+  }
+}
+
+main .top-section .left-part .logo {
+  grid-area: logo;
+  margin-top: 34px;
+  align-self: end;
+  width: 200px;
+  min-width: 100px;
+}
+
+@media screen and (max-width: 500px) {
+  main .top-section .left-part .logo {
+    width: 150px;
+  }
+}
+
+main .top-section .left-part .blank {
+  grid-area: blank;
+  width: 125px;
+  align-self: flex-end;
+}
+
+main .top-section .left-part .catering {
+  grid-area: catering;
+  text-align: left;
+  font: normal normal normal 82px/79px HucklebuckJF;
+  font-family: "Leckerli One", cursive;
+  letter-spacing: 0px;
+  color: #f23816;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1100px) {
+  main .top-section .left-part .catering {
+    font-size: 65px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .top-section .left-part .catering {
+    font-size: 45px;
+  }
+}
+
+main .top-section .left-part .hollis {
+  grid-area: hollis;
+  text-align: left;
+  font: normal normal normal 15px/41px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #020100;
+  opacity: 1;
+}
+
+main .top-section .right-part {
+  margin: 0 auto;
+  width: 45%;
+  padding-top: 55px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1100px) {
+  main .top-section .right-part {
+    margin-left: 120px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  main .top-section .right-part {
+    margin-left: 60px;
+    margin-right: 25px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main .top-section .right-part {
+    width: 80%;
+    padding-left: 0;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .top-section .right-part {
+    width: 95%;
+    margin-left: 0;
+  }
+}
+
+main .top-section .right-part .header-text {
+  text-align: center;
+  font: normal normal normal 21px/35px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #020100;
+  opacity: 1;
+}
+
+@media screen and (max-width: 400px) {
+  main .top-section .right-part .header-text {
+    font-size: 16px;
+  }
+}
+
+main .top-section .right-part .header-subtext {
+  text-align: center;
+  font: normal normal normal 15px/22px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #020100;
+  opacity: 1;
+}
+
+main .top-section .right-part .price {
+  margin: 0 auto;
+  margin-top: 10px;
+  position: relative;
+}
+
+main .top-section .right-part .price .only {
+  text-align: left;
+  font: normal normal bold 63px/59px Times New Roman;
+  letter-spacing: 0px;
+  color: #f23816;
+  opacity: 1;
+}
+
+@media screen and (max-width: 400px) {
+  main .top-section .right-part .price .only {
+    font-size: 50px;
+  }
+}
+
+main .top-section .right-part .price .dollars {
+  text-align: left;
+  font: normal normal bold 67px/57px Times New Roman;
+  letter-spacing: 0px;
+  color: #f23816;
+  opacity: 1;
+}
+
+@media screen and (max-width: 400px) {
+  main .top-section .right-part .price .dollars {
+    font-size: 50px;
+  }
+}
+
+main .top-section .right-part .price .cents {
+  text-align: left;
+  font: normal normal bold 44px/61px Times New Roman;
+  letter-spacing: 0px;
+  color: #f23816;
+  text-transform: lowercase;
+  opacity: 1;
+  position: relative;
+  top: -17px;
+  left: -5px;
+}
+
+@media screen and (max-width: 400px) {
+  main .top-section .right-part .price .cents {
+    font-size: 30px;
+    top: -14px;
+  }
+}
+
+main .top-section .right-part .price .asteric {
+  text-align: left;
+  font: normal normal bold 35px/62px Times New Roman;
+  letter-spacing: 0px;
+  color: #f23816;
+  text-transform: lowercase;
+  opacity: 1;
+  position: relative;
+  top: -25px;
+  left: -10px;
+}
+
+@media screen and (max-width: 400px) {
+  main .top-section .right-part .price .asteric {
+    font-size: 25px;
+    top: -17px;
+  }
+}
+
+main .top-section .right-part .phone-number {
+  text-align: center;
+  font: normal normal bold 54px/49px Times New Roman;
+  letter-spacing: 0px;
+  color: #f23816;
+  opacity: 1;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+main .top-section .right-part .orders {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+main .menu-section {
+  background-image: url("../images/blackboard2.jpg");
+  opacity: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+  padding-top: 30px;
+}
+
+main .menu-section .menu-header {
+  height: 76px;
+  text-align: left;
+  font: normal normal normal 60px/60px cursive;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 1;
+  margin: 0 auto;
+  margin-top: 124px;
+  margin-bottom: 50px;
+  width: 178px;
+  height: 63px;
+  text-align: left;
+  font: normal normal normal 62px/60px CHAWP;
+  font-family: CHAWP, cursive;
+  letter-spacing: 0.62px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+main .menu-section .menu-item {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+  width: 80%;
+}
+
+@media screen and (max-width: 900px) {
+  main .menu-section .menu-item {
+    width: 90%;
+  }
+}
+
+main .menu-section .menu-item .day-header {
+  text-align: left;
+  font: normal normal normal 43px/60px Itim;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+main .menu-section .menu-item .day-header textarea {
+  outline: 5px dashed red;
+  position: relative;
+  text-align: left;
+  font: normal normal normal 42px/48px Epitaph;
+  letter-spacing: 0px;
+  color: #ffffff;
+  background-image: url("../images/blackboard2-cropped.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+  max-width: 80%;
+  width: 100%;
+  height: 60px;
+}
+
+@media screen and (max-width: 900px) {
+  main .menu-section .menu-item .day-header textarea {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .menu-section .menu-item .day-header textarea {
+    width: 95%;
+  }
+}
+
+main .menu-section .menu-item .meal-summary {
+  margin-top: 5px;
+  text-align: left;
+  font: normal normal normal 62px/60px CHAWP;
+  letter-spacing: 0.62px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 1;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  main .menu-section .menu-item .meal-summary {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .menu-section .menu-item .meal-summary {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+}
+
+main .menu-section .menu-item .meal-summary textarea {
+  outline: 5px dashed red;
+  width: 80%;
+  height: 160px;
+  text-align: left;
+  font: normal normal normal 62px/60px CHAWP;
+  letter-spacing: 0.62px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 1;
+  background-image: url("../images/blackboard2-cropped.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 900px) {
+  main .menu-section .menu-item .meal-summary textarea {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .menu-section .menu-item .meal-summary textarea {
+    width: 95%;
+  }
+}
+
+main .menu-section .menu-item .meal-content {
+  width: 100%;
+  text-align: left;
+  font: normal normal normal 43px/60px Itim;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: lowercase;
+  opacity: 1;
+  line-height: 1;
+}
+
+@media screen and (max-width: 700px) {
+  main .menu-section .menu-item .meal-content {
+    font-size: 30px;
+  }
+}
+
+main .menu-section .menu-item .meal-content textarea {
+  outline: 5px dashed red;
+  width: 80%;
+  height: 200px;
+  text-align: left;
+  font: normal normal normal 43px/60px Itim;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: lowercase;
+  opacity: 1;
+  background-image: url("../images/blackboard2-cropped.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 900px) {
+  main .menu-section .menu-item .meal-content textarea {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .menu-section .menu-item .meal-content textarea {
+    width: 95%;
+  }
+}
+
+main .menu-section .images {
+  margin: 0 auto;
+  margin-top: 50px;
+  position: relative;
+  justify-content: center;
+  align-items: baseline;
+  width: 80%;
+  height: 500px;
+  display: none;
+}
+
+main .menu-section .images img {
+  border: 10px solid white;
+  position: absolute;
+  border: 12px solid #ffffff;
+  width: 50%;
+}
+
+main .menu-section .images #tape1 {
+  width: 40px;
+  z-index: 10;
+  border: 0px;
+  left: 200px;
+  top: -50px;
+  transform: matrix(0.98, -0.17, 0.17, 0.98, 0, 0);
+}
+
+main .menu-section .images #tape2 {
+  width: 40px;
+  z-index: 10;
+  border: 0px;
+  left: 550px;
+  top: 35px;
+  transform: matrix(0.99, 0.14, -0.14, 0.99, 0, 0);
+}
+
+main .menu-section .images #tape3 {
+  width: 40px;
+  z-index: 10;
+  border: 0px;
+  left: 850px;
+  top: -50px;
+}
+
+main .menu-section .images #image1 {
+  width: 358px;
+  height: 361px;
+  transform: matrix(0.99, 0.14, -0.14, 0.99, 0, 0);
+  left: 40%;
+  top: 100px;
+  z-index: 2;
+}
+
+main .menu-section .images #image2 {
+  width: 535px;
+  height: 442px;
+  transform: matrix(0.98, -0.17, 0.17, 0.98, 0, 0);
+  left: -15px;
+}
+
+main .menu-section .images #image3 {
+  width: 432px;
+  height: 253px;
+  left: 63%;
+}
+
+main .submit-button {
+  margin-top: 20px;
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  border: 5px dashed red;
+  border-radius: 25px;
+  font-size: 50px;
+}
+
+main .more-stuff {
+  position: relative;
+  top: -10px;
+  display: none;
+}
+
+main .more-stuff .all-entrees {
+  text-align: left;
+  font: normal normal normal 62px/62px "Funstuff-Bold";
+  font-family: "Funstuff-Bold", Arial, Helvetica, sans-serif;
+  letter-spacing: 0px;
+  color: #f23816;
+  opacity: 1;
+}
+
+main .more-stuff .dollar-sign {
+  position: relative;
+  font: normal normal normal 46px/63px Arial;
+  letter-spacing: -35px;
+  color: #f23816;
+  text-transform: lowercase;
+  opacity: 1;
+  top: -15px;
+}
+
+main .more-stuff .dollar-amount {
+  position: relative;
+  font: normal normal normal 62px/63px Arial;
+  letter-spacing: -8px;
+  color: #f23816;
+  opacity: 1;
+  left: 15px;
+}
+
+main .more-stuff .cents-amount {
+  position: relative;
+  font: normal normal normal 38px/63px Arial;
+  letter-spacing: -3px;
+  color: #f23816;
+  text-transform: lowercase;
+  opacity: 1;
+  left: 15px;
+  top: -15px;
+}
+
+main .more-stuff .happy {
+  text-align: left;
+  font: normal normal normal 18px/34px BioRhyme Expanded;
+  letter-spacing: 0px;
+  opacity: 1;
+  margin-bottom: 15px;
+}
+
+main .more-stuff .pleased {
+  text-align: left;
+  font: normal normal normal 18px/34px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #f23816;
+}
+
+main .more-stuff .phone-number {
+  text-align: left;
+  font: normal normal normal 56px/51px Epitaph;
+  letter-spacing: 0px;
+  color: #f23816;
+  opacity: 1;
+}
+
+main .footer {
+  background: #0000004d 0% 0% no-repeat padding-box;
+  padding-bottom: 40px;
+  height: auto;
+}
+
+main .footer .submit-button {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  border: 5px dashed red;
+  border-radius: 25px;
+  font-size: 50px;
+}
+
+main .footer .copy1 {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  font: normal normal normal 20px/32px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #f23816;
+  padding-bottom: 30px;
+  text-align: center;
+  font: normal normal normal 21px/30px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+main .footer .copy2 {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  font: normal normal normal 16px/28px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #676462;
+  opacity: 1;
+  text-align: center;
+  font: normal normal normal 17px/27px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+/*# sourceMappingURL=udpate-menu2.css.map */

@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme+Expanded&family=Leckerli+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+
+@font-face {
+    font-family: remedy;
+    // src: url("RemedyDouble.ttf");
+    // src: url(https://www.alchemywebdesigns.com/dev/ariscatering/files/fonts/RemedyDouble.ttf);
+    src: local("C:/xampp/htdocs/ArisCatering/files/fonts/Funstuff-Bold.ttf.woff");
+}
+
+@font-face {
+    font-family: "Funstuff-Bold";
+    src: url("Funstuff-Bold.ttf.woff") format("woff"), url("Funstuff-Bold.ttf.svg#Funstuff-Bold") format("svg"),
+        url("Funstuff-Bold.ttf.eot"), url("Funstuff-Bold.ttf.eot?#iefix") format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: CHAWP;
+    // src: url("Chalkduster.ttf");
+    src: url("chawp.otf");
+    src: url("chawp.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Blenda Script";
+    src: url("Blenda Script.otf")
+}

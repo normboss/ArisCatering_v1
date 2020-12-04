@@ -1,0 +1,26 @@
+@import "fonts";
+
+@mixin max-width-mixin($arg) {
+    @media screen and (max-width: $arg ) {
+        @content;
+    }
+}
+
+@mixin max-height-mixin($arg) {
+    @media screen and (max-height: $arg ) {
+        @content;
+    }
+}
+
+@mixin min-height-mixin($arg) {
+    @media screen and (min-height: $arg ) {
+        @content;
+    }
+}
+
+
+@mixin min-width-mixin($arg) {
+    @media screen and (min-width: $arg ) {
+        @content;
+    }
+}

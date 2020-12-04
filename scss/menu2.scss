@@ -1,0 +1,593 @@
+@import "common";
+
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme+Expanded&family=Leckerli+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+
+@font-face {
+    font-family: remedy;
+    // src: url("RemedyDouble.ttf");
+    // src: url(https://www.alchemywebdesigns.com/dev/ariscatering/files/fonts/RemedyDouble.ttf);
+    src: local("C:/xampp/htdocs/ArisCatering/files/fonts/Funstuff-Bold.ttf.woff");
+}
+
+@font-face {
+    font-family: "Funstuff-Bold";
+    src: url("Funstuff-Bold.ttf.woff") format("woff"), url("Funstuff-Bold.ttf.svg#Funstuff-Bold") format("svg"),
+        url("Funstuff-Bold.ttf.eot"), url("Funstuff-Bold.ttf.eot?#iefix") format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: CHAWP;
+    // src: url("Chalkduster.ttf");
+    src: url("chawp.otf");
+    src: url("chawp.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    min-width: 300px;
+    // height: 3000px;
+    // background-color: #f2ed7733;
+    overflow: hidden;
+    padding-top: 10px;
+
+    .top-section {
+        // outline: 3px solid blue;
+        background-color: #0000004d;
+        width: 100%;
+        min-width: 300px;
+        margin-top: 0;
+        display: flex;
+        justify-content: space-evenly;
+
+        .box {
+            // outline: 3px solid red;
+        }
+
+        @include max-width-mixin(900px) {
+            flex-direction: column;
+            align-items: end;
+            // padding-left: 200px;
+            width: 100%;
+            min-width: 300px;
+            // height: 300px;
+        }
+
+        .left-part {
+            // outline: 3px solid green;
+            width: 40%;
+            position: relative;
+            padding-left: 100px;
+            @include max-width-mixin(1200px) {
+                padding-left: 50px;
+            }
+            @include max-width-mixin(1100px) {
+                padding-left: 25px;
+            }
+            @include max-width-mixin(900px) {
+                width: 80%;
+                padding-left: 0;
+                // left: -100px;
+                // display: flex;
+                // flex-direction: column;
+                align-self: center;
+            }
+            @include max-width-mixin(600px) {
+                padding-left: 0px;
+                width: 95%;
+            }
+
+            display: grid;
+            grid-template-areas:
+                "cookin logo blank"
+                "cookin logo blank"
+                "catering catering catering"
+                "hollis hollis hollis";
+            // grid-template-areas:
+            //     "cookin logo"
+            //     "cookin logo"
+            //     "catering catering"
+            //     "hollis hollis";
+
+            .cookin {
+                // outline: 3px solid red;
+                grid-area: cookin;
+
+                // padding: 25px;
+                padding-right: 25px;
+                text-align: left;
+                font: normal normal normal 65px/65px HucklebuckJF;
+                font-family: "Leckerli One", cursive;
+                letter-spacing: 0px;
+                color: #f23816;
+                opacity: 1;
+                align-self: end;
+                justify-self: start;
+                padding-left: 0;
+
+                @include max-width-mixin(1150px) {
+                    font-size: 50px;
+                }
+                @include max-width-mixin(500px) {
+                    font-size: 35px;
+                }
+            }
+
+            .logo {
+                // outline: 3px solid red;
+                grid-area: logo;
+                margin-top: 34px;
+                align-self: end;
+                width: 200px;
+                min-width: 100px;
+                @include max-width-mixin(500px) {
+                    width: 150px;
+                }
+            }
+            .blank {
+                // outline: 3px solid red;
+                grid-area: blank;
+                width: 125px;
+                align-self: flex-end;
+            }
+
+            .catering {
+                // outline: 3px solid red;
+                grid-area: catering;
+
+                text-align: left;
+                font: normal normal normal 82px/79px HucklebuckJF;
+                font-family: "Leckerli One", cursive;
+                letter-spacing: 0px;
+                color: #f23816;
+                opacity: 1;
+                @include max-width-mixin(1150px) {
+                    font-size: 65px;
+                }
+                @include max-width-mixin(500px) {
+                    font-size: 45px;
+                }
+            }
+
+            .hollis {
+                // outline: 3px solid red;
+                grid-area: hollis;
+
+                text-align: left;
+                font: normal normal normal 15px/41px BioRhyme Expanded;
+                letter-spacing: 0px;
+                color: #020100;
+                opacity: 1;
+            }
+        }
+
+        .right-part {
+            // outline: 3px solid red;
+            margin: 0 auto;
+            width: 45%;
+            // min-width: 650px;
+            padding-top: 55px;
+            display: flex;
+            flex-direction: column;
+            @include max-width-mixin(1100px) {
+                margin-left: 120px;
+            }
+            @include max-width-mixin(950px) {
+                margin-left: 60px;
+                margin-right: 25px;
+            }
+            @include max-width-mixin(900px) {
+                width: 80%;
+                padding-left: 0;
+                // left: -100px;
+                // display: flex;
+                // flex-direction: column;
+                align-self: center;
+            }
+            @include max-width-mixin(600px) {
+                width: 95%;
+                margin-left: 0;
+            }
+
+            .header-text {
+                text-align: center;
+                font: normal normal normal 18px/35px "BioRhyme Expanded";
+                letter-spacing: 0px;
+                color: #020100;
+                opacity: 1;
+                // line-height: 1.6;
+                @include max-width-mixin(1150px) {
+                    font-size: 16px;
+                }
+            }
+
+            .header-subtext {
+                text-align: center;
+                font: normal normal normal 15px/22px BioRhyme Expanded;
+                letter-spacing: 0px;
+                color: #020100;
+                opacity: 1;
+                @include max-width-mixin(1150px) {
+                    font-size: 14px;
+                }
+            }
+
+            .price {
+                margin: 0 auto;
+                margin-top: 10px;
+                position: relative;
+
+                .only {
+                    text-align: left;
+                    font: normal normal bold 63px/59px Times New Roman;
+                    letter-spacing: 0px;
+                    color: #f23816;
+                    opacity: 1;
+                    @include max-width-mixin(1150px) {
+                        font-size: 50px;
+                    }
+                }
+                .dollars {
+                    text-align: left;
+                    font: normal normal bold 67px/57px Times New Roman;
+                    letter-spacing: 0px;
+                    color: #f23816;
+                    opacity: 1;
+                    @include max-width-mixin(1150px) {
+                        font-size: 50px;
+                    }
+                }
+                .cents {
+                    text-align: left;
+                    font: normal normal bold 44px/61px Times New Roman;
+                    letter-spacing: 0px;
+                    color: #f23816;
+                    text-transform: lowercase;
+                    opacity: 1;
+                    position: relative;
+                    top: -17px;
+                    left: -5px;
+                    @include max-width-mixin(1150px) {
+                        font-size: 30px;
+                        top: -14px;
+                    }
+                }
+                .asteric {
+                    text-align: left;
+                    font: normal normal bold 35px/62px Times New Roman;
+                    letter-spacing: 0px;
+                    color: #f23816;
+                    text-transform: lowercase;
+                    opacity: 1;
+                    position: relative;
+                    top: -25px;
+                    left: -10px;
+                    @include max-width-mixin(1150px) {
+                        font-size: 25px;
+                        top: -17px;
+                    }
+                }
+            }
+
+            .phone-number {
+                text-align: center;
+                font: normal normal bold 54px/49px Times New Roman;
+                letter-spacing: 0px;
+                color: #f23816;
+                opacity: 1;
+                margin-top: 20px;
+                // margin-bottom: 10px;
+                
+                @include max-width-mixin(1150px) {
+                    font-size: 43px;
+                    top: -10px;
+                }
+        }
+
+            .orders {
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
+            // display: none;
+        }
+    }
+
+    .menu-section {
+        // outline: 3px solid red;
+        background-image: url("../images/blackboard2.jpg");
+        opacity: 1;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: auto; //2200px;
+        width: 100%;
+        margin: 0 auto;
+        // display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 100px;
+        padding-top: 30px;
+
+        .menu-header {
+            // outline: 3px solid red;
+            height: 76px;
+            text-align: left;
+            font: normal normal normal 60px/60px cursive;
+            letter-spacing: 0px;
+            color: #ffffff;
+            text-transform: uppercase;
+            opacity: 1;
+            margin: 0 auto;
+            margin-top: 124px;
+            margin-bottom: 50px;
+
+            width: 178px;
+            height: 63px;
+            text-align: left;
+            font: normal normal normal 62px/60px CHAWP;
+            font-family: CHAWP, cursive;
+            letter-spacing: 0.62px;
+            color: #ffffff;
+            text-transform: uppercase;
+            opacity: 1;
+        }
+
+        .menu-item {
+            // outline: 3px solid red;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 50px;
+            // margin-left: 12%; // 146px;
+            width: 80%;
+            @include max-width-mixin(900px) {
+                width: 90%;
+            }
+
+            .day-header {
+                // outline: 3px solid blue;
+                text-align: left;
+                font: normal normal normal 43px/60px Itim;
+                letter-spacing: 0px;
+                color: #ffffff;
+                // text-transform: lowercase;
+                opacity: 1;
+
+                // display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+            // #monday {
+            //     background: #169f8f 0% 0% no-repeat padding-box;
+            // }
+            // #tuesday {
+            //     background: #f23816 0% 0% no-repeat padding-box;
+            // }
+            // #wednesday {
+            //     background: #169f8f 0% 0% no-repeat padding-box;
+            // }
+            // #thursday {
+            //     background: #f23816 0% 0% no-repeat padding-box;
+            // }
+            // #friday {
+            //     background: #169f8f 0% 0% no-repeat padding-box;
+            // }
+            .meal-summary {
+                // outline: 3px solid red;
+                margin-top: 5px;
+                text-align: left;
+                font: normal normal normal 62px/60px CHAWP;
+                letter-spacing: 0.62px;
+                color: #ffffff;
+                text-transform: uppercase;
+                opacity: 1;
+                padding-bottom: 10px;
+                @include max-width-mixin(700px) {
+                    font-size: 45px;
+                }
+                @include max-width-mixin(500px) {
+                    font-size: 30px;
+                    line-height: 1.5;
+                }
+            }
+
+            .meal-content {
+                // outline: 3px solid red;
+                width: 100%; //950px;
+                text-align: left;
+                font: normal normal normal 43px/60px Itim;
+                letter-spacing: 0px;
+                color: #ffffff;
+                text-transform: lowercase;
+                opacity: 1;
+                line-height: 1;
+                @include max-width-mixin(700px) {
+                    font-size: 30px;
+                }
+            }
+        }
+        .images {
+            // outline: 3px solid red;
+            margin: 0 auto;
+            margin-top: 50px;
+            position: relative;
+            // display: flex;
+            justify-content: center;
+            align-items: baseline;
+            width: 80%;
+            height: 500px;
+
+            img {
+                // width: 50%;
+                border: 10px solid white;
+                position: absolute;
+                border: 12px solid #ffffff;
+                width: 50%;
+            }
+
+            #tape1 {
+                width: 40px;
+                z-index: 10;
+                border: 0px;
+                left: 200px;
+                top: -50px;
+                transform: matrix(0.98, -0.17, 0.17, 0.98, 0, 0);
+            }
+
+            #tape2 {
+                width: 40px;
+                z-index: 10;
+                border: 0px;
+                left: 550px;
+                top: 35px;
+                transform: matrix(0.99, 0.14, -0.14, 0.99, 0, 0);
+            }
+
+            #tape3 {
+                width: 40px;
+                z-index: 10;
+                border: 0px;
+                left: 850px;
+                top: -50px;
+            }
+
+            #image1 {
+                width: 358px;
+                height: 361px;
+                transform: matrix(0.99, 0.14, -0.14, 0.99, 0, 0);
+                // position: absolute;
+                left: 40%;
+                top: 100px;
+                z-index: 2;
+            }
+            #image2 {
+                width: 535px;
+                height: 442px;
+                transform: matrix(0.98, -0.17, 0.17, 0.98, 0, 0);
+                left: -15px;
+            }
+            #image3 {
+                width: 432px;
+                height: 253px;
+                left: 63%;
+            }
+            // display: none;
+        }
+    }
+    .more-stuff {
+        // outline: 3px solid red;
+        position: relative;
+        // margin-right: 30px;
+        top: -10px;
+        display: none;
+
+        .all-entrees {
+            // outline: 3px solid red;
+            text-align: left;
+            font: normal normal normal 62px/62px "Funstuff-Bold";
+            font-family: "Funstuff-Bold", Arial, Helvetica, sans-serif;
+            letter-spacing: 0px;
+            color: #f23816;
+            opacity: 1;
+        }
+        .dollar-sign {
+            position: relative;
+            // text-align: left;
+            font: normal normal normal 46px/63px Arial;
+            letter-spacing: -35px;
+            color: #f23816;
+            text-transform: lowercase;
+            opacity: 1;
+            top: -15px;
+        }
+        .dollar-amount {
+            position: relative;
+            // text-align: left;
+            font: normal normal normal 62px/63px Arial;
+            letter-spacing: -8px;
+            color: #f23816;
+            opacity: 1;
+            left: 15px;
+        }
+        .cents-amount {
+            position: relative;
+            // text-align: left;
+            font: normal normal normal 38px/63px Arial;
+            letter-spacing: -3px;
+            color: #f23816;
+            text-transform: lowercase;
+            opacity: 1;
+            left: 15px;
+            top: -15px;
+        }
+
+        .happy {
+            text-align: left;
+            font: normal normal normal 18px/34px BioRhyme Expanded;
+            letter-spacing: 0px;
+            opacity: 1;
+            margin-bottom: 15px;
+        }
+
+        .pleased {
+            text-align: left;
+            font: normal normal normal 18px/34px BioRhyme Expanded;
+            letter-spacing: 0px;
+            color: #f23816;
+        }
+
+        .phone-number {
+            text-align: left;
+            font: normal normal normal 56px/51px Epitaph;
+            letter-spacing: 0px;
+            color: #f23816;
+            opacity: 1;
+        }
+    }
+
+    .footer {
+        background: #0000004d 0% 0% no-repeat padding-box;
+        padding-top: 100px;
+        padding-bottom: 40px;
+        height: auto;
+
+        .copy1 {
+            margin: 0 auto;
+            width: 80%;
+            text-align: center;
+            font: normal normal normal 20px/32px BioRhyme Expanded;
+            letter-spacing: 0px;
+            color: #f23816;
+            // margin-bottom: 15px;
+            padding-bottom: 30px;
+
+            // width: 1174px;
+            // height: 123px;
+            text-align: center;
+            font: normal normal normal 21px/30px BioRhyme Expanded;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1;
+        }
+        .copy2 {
+            margin: 0 auto;
+            width: 80%;
+            text-align: center;
+            font: normal normal normal 16px/28px BioRhyme Expanded;
+            letter-spacing: 0px;
+            color: #676462;
+            opacity: 1;
+
+            text-align: center;
+            font: normal normal normal 17px/27px BioRhyme Expanded;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1;
+        }
+    }
+}

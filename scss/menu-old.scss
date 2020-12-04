@@ -1,0 +1,479 @@
+@import "common";
+
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme+Expanded&family=Leckerli+One&display=swap");
+
+@font-face {
+    font-family: remedy;
+    // src: url("RemedyDouble.ttf");
+    // src: url(https://www.alchemywebdesigns.com/dev/ariscatering/files/fonts/RemedyDouble.ttf);
+    src: local("C:/xampp/htdocs/ArisCatering/files/fonts/Funstuff-Bold.ttf.woff");
+}
+
+@font-face {
+    font-family: "Funstuff-Bold";
+    src: url("Funstuff-Bold.ttf.woff") format("woff"), url("Funstuff-Bold.ttf.svg#Funstuff-Bold") format("svg"),
+        url("Funstuff-Bold.ttf.eot"), url("Funstuff-Bold.ttf.eot?#iefix") format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1280px;
+    height: 3000px;
+    background-color: #f2ed7733;
+
+    .top-section {
+        // outline: 3px solid red;
+        height: auto;
+        display: flex;
+        margin-bottom: 75px;
+        @include max-width-mixin(1250px) {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .left-part {
+            // outline: 3px solid red;
+            width: 50%;
+            @include max-width-mixin(1250px) {
+                width: 100%;
+                align-self: center;
+            }
+            display: flex;
+            flex-direction: column;
+
+            .logo-block {
+                background: #169f8fcc 0% 0% no-repeat padding-box;
+                display: flex;
+                .logo-text {
+                    // outline: 3px solid red;
+                    text-align: left;
+                    font: normal normal normal 56px/51px HucklebuckJF;
+                    letter-spacing: 0px;
+                    color: #f7fcfb;
+                    opacity: 1;
+                    width: 192px;
+                    margin-left: 62px;
+                    margin-top: 34px;
+                    @include max-width-mixin(750px) {
+                        margin-left: 15px;
+                        margin-top: 25px;
+                    }
+                    font-family: "Leckerli One", cursive;
+                    @include max-width-mixin(525px) {
+                        font-size: 32px;
+                        margin-left: 25px;
+                    }
+                }
+
+                img {
+                    // width: 170px;
+                    width: 25%;
+                    height: 25%;
+                    margin-bottom: 10px;
+                    @include max-width-mixin(525px) {
+                        // width: 100%;
+                    }
+                }
+            }
+
+            .aris-catering {
+                // outline: 3px solid red;
+                text-align: left;
+                font: normal normal normal 75px/68px HucklebuckJF;
+                letter-spacing: 0px;
+                color: #f23816;
+                opacity: 1;
+                font-family: "Leckerli One", cursive;
+                padding-left: 56px;
+                border-top: 14px solid #f23816;
+                border-bottom: 14px solid #f23816;
+                padding-top: 10px;
+                padding-bottom: 15px;
+                @include max-width-mixin(600px) {
+                    font-size: 50px;
+                }
+            }
+        }
+        .right-part {
+            // outline: 3px solid red;
+            width: 50%;
+            // display: inline-block;
+            position: relative;
+            padding-left: 40px;
+            @include max-width-mixin(1250px) {
+                width: 75%;
+                align-self: center;
+                margin: 0 auto;
+                // text-align: center;
+                padding-left: 10%;
+            }
+            @include max-width-mixin(850px) {
+                width: 95%;
+                padding-left: 10px;
+            }
+
+            .style1 {
+                display: inline-block;
+                text-align: left;
+                font: normal normal normal 25px/49px BioRhyme Expanded;
+                letter-spacing: 0px;
+                color: #f23816;
+                opacity: 1;
+                @include max-width-mixin(660px) {
+                    font-size: 24px;
+                }
+            }
+            .style2 {
+                text-align: left;
+                font: normal normal normal 56px/51px Epitaph;
+                letter-spacing: 0px;
+                color: #169f8f;
+                opacity: 1;
+                @include max-width-mixin(660px) {
+                    font-size: 36px;
+                }
+            }
+            .style3 {
+                text-align: left;
+                font: normal normal normal 56px/51px "Funstuff-Bold";
+                letter-spacing: 0px;
+                color: #f23816;
+                opacity: 1;
+                font-family: "Funstuff-Bold", Arial, Helvetica, sans-serif;
+                @include max-width-mixin(660px) {
+                    font-size: 36px;
+                }
+            }
+
+            .style4 {
+                text-align: left;
+                font: normal normal normal 25px/49px BioRhyme Expanded;
+                letter-spacing: 0px;
+                color: #169f8f;
+                opacity: 1;
+                @include max-width-mixin(660px) {
+                    font-size: 22px;
+                }
+            }
+
+            .style5 {
+                // outline: 3px solid red;
+                display: inline-block;
+                text-align: left;
+                font: normal normal normal 25px/49px BioRhyme Expanded;
+                letter-spacing: 0px;
+                color: #169f8f;
+                opacity: 1;
+                position: relative;
+                @include max-width-mixin(660px) {
+                    font-size: 20px;
+                }
+
+                #or-id {
+                    // outline: 3px solid red;
+                    position: absolute;
+                    top: -15px;
+                    left: -10px;
+                    @include max-width-mixin(650px) {
+                        font-size: 20px;
+                    }
+                }
+                #delivery-id {
+                    // outline: 3px solid blue;
+                    width: 200px;
+                    position: relative;
+                    left: 15px;
+                    top: 8px;
+                    padding-right: 10px;
+                }
+            }
+            .style6 {
+                text-align: left;
+                font: normal normal normal 57px/52px Epitaph;
+                letter-spacing: 0px;
+                color: #f23816;
+                opacity: 1;
+                position: relative;
+                top: 10px;
+                @include max-width-mixin(660px) {
+                    font-size: 36px;
+                }
+            }
+
+            .style7 {
+                margin-top: 20px;
+                text-align: left;
+                font: normal normal normal 56px/51px Epitaph;
+                letter-spacing: -2px;
+                color: #f23816;
+                opacity: 1;
+                display: inline-block;
+                #to-id {
+                    // outline: 3px solid red;
+                    position: absolute;
+                    top: -25px;
+                    left: -5px;
+                }
+                #order-id {
+                    // outline: 3px solid blue;
+                    width: 200px;
+                    position: relative;
+                    left: 15px;
+                    // top: 8px;
+                }
+                @include max-width-mixin(660px) {
+                    font-size: 36px;
+                }
+            }
+            .style8 {
+                margin-top: 60px;
+                text-align: left;
+                font: normal normal normal 25px/49px BioRhyme Expanded;
+                letter-spacing: 0px;
+                color: #169f8f;
+                opacity: 1;
+                @include max-width-mixin(660px) {
+                    margin-top: 20px;
+                    font-size: 22px;
+                }
+            }
+            .style9 {
+            }
+            .style10 {
+            }
+            #or-id {
+                position: relative;
+                top: -15px;
+                @include max-width-mixin(660px) {
+                    font-size: 26px;
+                }
+}
+            #deliver-id {
+                position: relative;
+                left: 25px;
+                @include max-width-mixin(660px) {
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+
+    .menu-section {
+        // outline: 3px solid red;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        @include max-width-mixin(1250px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        row-gap: 79px;
+        column-gap: 45px;
+        justify-items: center;
+        padding-left: 66px;
+        padding-right: 62px;
+        @include max-width-mixin(900px) {
+            grid-template-columns: 1fr;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .menu-item {
+            // outline: 3px solid red;
+            margin: 0 auto;
+            text-align: center;
+            width: 325px;
+            @include max-width-mixin(900px) {
+                width: 80%;
+            }
+            @include max-width-mixin(500px) {
+                width: 95%;
+            }
+            height: 568px;
+            background: #ffffff 0% 0% no-repeat padding-box;
+            box-shadow: 0px 12px 14px #00000029;
+            opacity: 1;
+            margin-left: 0;
+            margin-right: 0;
+            // background-color: lightcyan;
+            padding-left: 30px;
+            @include max-width-mixin(600px) {
+                padding-left: 5px;
+            }
+
+            .day-header {
+                text-align: left;
+                font: normal normal normal 42px/48px Epitaph;
+                letter-spacing: 0px;
+                color: #f7fafa;
+                opacity: 1;
+                width: 345px;
+                height: 77px;
+                transform: matrix(0.99, -0.14, 0.14, 0.99, 0, 0);
+                box-shadow: 0px 10px 12px #00000029;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding-left: 20px;
+                position: relative;
+                top: 5px;
+                left: -55px;
+                @include max-width-mixin(600px) {
+                    left: -25px;
+                }
+            }
+            #monday {
+                background: #169f8f 0% 0% no-repeat padding-box;
+            }
+            #tuesday {
+                background: #f23816 0% 0% no-repeat padding-box;
+            }
+            #wednesday {
+                background: #169f8f 0% 0% no-repeat padding-box;
+            }
+            #thursday {
+                background: #f23816 0% 0% no-repeat padding-box;
+            }
+            #friday {
+                background: #169f8f 0% 0% no-repeat padding-box;
+            }
+            .meal-summary {
+                // outline: 3px solid red;
+                margin-top: 50px;
+                text-align: left;
+                font: normal normal normal 51px/51px "Funstuff-Bold";
+                letter-spacing: 0px;
+                color: #f23816;
+                // padding-left: 30px;
+                margin-bottom: 20px;
+                height: 200px;
+            }
+
+            .meal-content {
+                // outline: 3px solid red;
+                // padding-top: 25px;
+                // padding-left: 30px;
+                text-align: left;
+                font: normal normal normal 22px/34px BioRhyme Expanded;
+                letter-spacing: 0px;
+                color: #676462;
+                opacity: 1;
+                font-family: "BioRhyme Expanded", serif;
+            }
+        }
+        .more-stuff {
+            // outline: 3px solid red;
+            position: relative;
+            // margin-right: 30px;
+            top: -10px;
+
+            .all-entrees {
+                // outline: 3px solid red;
+                text-align: left;
+                font: normal normal normal 62px/62px "Funstuff-Bold";
+                font-family: "Funstuff-Bold", Arial, Helvetica, sans-serif;
+                letter-spacing: 0px;
+                color: #f23816;
+                opacity: 1;
+            }
+            .dollar-sign {
+                position: relative;
+                // text-align: left;
+                font: normal normal normal 46px/63px Arial;
+                letter-spacing: -35px;
+                color: #f23816;
+                text-transform: lowercase;
+                opacity: 1;
+                top: -15px;
+            }
+            .dollar-amount {
+                position: relative;
+                // text-align: left;
+                font: normal normal normal 62px/63px Arial;
+                letter-spacing: -8px;
+                color: #f23816;
+                opacity: 1;
+                left: 15px;
+            }
+            .cents-amount {
+                position: relative;
+                // text-align: left;
+                font: normal normal normal 38px/63px Arial;
+                letter-spacing: -3px;
+                color: #f23816;
+                text-transform: lowercase;
+                opacity: 1;
+                left: 15px;
+                top: -15px;
+            }
+
+            .happy {
+                text-align: left;
+                font: normal normal normal 18px/34px BioRhyme Expanded;
+                letter-spacing: 0px;
+                opacity: 1;
+                margin-bottom: 15px;
+            }
+
+            .pleased {
+                text-align: left;
+                font: normal normal normal 18px/34px BioRhyme Expanded;
+                letter-spacing: 0px;
+                color: #f23816;
+            }
+
+            .phone-number {
+                text-align: left;
+                font: normal normal normal 56px/51px Epitaph;
+                letter-spacing: 0px;
+                color: #f23816;
+                opacity: 1;
+            }
+        }
+    }
+    .images {
+        margin-top: 104px;
+        height: 360px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        img {
+            // width: 50%;
+        }
+        .image1 {
+            width: 495px;
+            background-image: url("../images/image1.JPG");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .image2 {
+            width: 660px;
+            background-image: url("../images/image2.JPG");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    .copy1 {
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+        font: normal normal normal 20px/32px BioRhyme Expanded;
+        letter-spacing: 0px;
+        color: #f23816;
+        margin-bottom: 15px;
+    }
+    .copy2 {
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+        font: normal normal normal 16px/28px BioRhyme Expanded;
+        letter-spacing: 0px;
+        color: #676462;
+        opacity: 1;
+    }
+}

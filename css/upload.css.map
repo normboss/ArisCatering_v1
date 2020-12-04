@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AACI,IADA,CACA,GAAG,CAAC;EACA,KAAK,EAAE,KAAK;CACf",
+    "sources": [
+        "../scss/upload.scss"
+    ],
+    "names": [],
+    "file": "upload.css"
+}

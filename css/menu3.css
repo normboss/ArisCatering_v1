@@ -1,0 +1,813 @@
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme+Expanded&family=Leckerli+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@font-face {
+  font-family: remedy;
+  src: local("C:/xampp/htdocs/ArisCatering/files/fonts/Funstuff-Bold.ttf.woff");
+}
+
+@font-face {
+  font-family: "Funstuff-Bold";
+  src: url("Funstuff-Bold.ttf.woff") format("woff"), url("Funstuff-Bold.ttf.svg#Funstuff-Bold") format("svg"), url("Funstuff-Bold.ttf.eot"), url("Funstuff-Bold.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CHAWP;
+  src: url("chawp.otf");
+  src: url("chawp.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Blenda Script";
+  src: url("Blenda Script.otf");
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main nav {
+  background-color: #e8e2d9;
+  max-width: 1280pc;
+  width: 100%;
+  margin-top: 0;
+  height: auto;
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+main nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+main nav ul li {
+  padding-right: 29px;
+}
+
+main .top-section {
+  background-color: #e8e2d9;
+  max-width: 1280pc;
+  width: 100%;
+  margin-top: 0;
+  height: auto;
+  padding-bottom: 25px;
+}
+
+main .top-section header {
+  margin: 0 auto;
+  width: 84%;
+  height: auto;
+  display: flex;
+  grid-template-areas: "cookin logo blank4 blank4 blank4 blank4 blank4 blank4 blank4 blank4 " "cookin   logo     blank    delicious delicious delicious delicious blank3 blank3 blank3" "cookin   logo     blank    price     price     price     price    blank3 blank3 blank3" "cookin   logo     blank    pickup    pickup    pickup    pickup   blank3 blank3 blank3" "catering catering blank2 phone     phone     phone     phone    blank3 blank3 blank3" "hollis   hollis   blank2   orders    orders    orders    orders   blank3 blank3 blank3";
+}
+
+@media screen and (max-width: 900px) {
+  main .top-section header {
+    grid-template-areas: "cookin	logo	blank" "cookin	logo	blank" "cookin	logo	blank" "catering	catering	catering" "hollis	hollis	hollis" "delicious	delicious	delicious" "price	price	price	" "pickup	pickup	pickup		" "phone	phone	phone		" "orders	orders	orders		";
+    justify-content: center;
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main .top-section header {
+    grid-template-areas: "cookin	logo	" "cookin	logo	" "cookin	logo	" "catering	catering	" "hollis	hollis	" "delicious	delicious" "price	price		" "pickup	pickup			" "phone	phone			" "orders	orders			";
+    justify-content: center;
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .top-section header {
+    grid-template-areas: "cookin	logo	blank" "cookin	logo	blank" "cookin	logo	blank" "catering	catering	catering" "hollis	hollis	hollis" "delicious	delicious	delicious" "price	price	price	" "pickup	pickup	pickup		" "phone	phone	phone		" "orders	orders	orders		";
+    justify-content: center;
+    justify-self: center;
+  }
+}
+
+main .top-section header .left-side {
+  outline: 3px dashed red;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 41px;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+main .top-section header .left-side .cookin-and-logo {
+  outline: 3px solid blue;
+  display: flex;
+}
+
+main .top-section header .left-side .cookin-and-logo .cookin {
+  grid-area: cookin;
+  text-align: left;
+  font: normal normal normal 62px/63px Blenda Script;
+  letter-spacing: 0px;
+  line-height: 1;
+  color: #f23816;
+  color: #020100;
+  opacity: 1;
+  align-self: end;
+  justify-self: start;
+  padding-left: 0;
+  position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+  main .top-section header .left-side .cookin-and-logo .cookin {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  main .top-section header .left-side .cookin-and-logo .cookin {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .top-section header .left-side .cookin-and-logo .cookin {
+    width: 70%;
+  }
+}
+
+main .top-section header .left-side .cookin-and-logo .logo {
+  grid-area: logo;
+  align-self: end;
+  min-width: 100px;
+}
+
+@media screen and (max-width: 1000px) {
+  main .top-section header .left-side .cookin-and-logo .logo {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main .top-section header .left-side .cookin-and-logo .logo {
+    padding-right: 300px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main .top-section header .left-side .cookin-and-logo .logo {
+    padding-right: 150px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .top-section header .left-side .cookin-and-logo .logo {
+    padding-right: 100px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .top-section header .left-side .cookin-and-logo .logo {
+    width: 150px;
+    padding-right: 0;
+  }
+}
+
+main .top-section header .left-side .catering {
+  grid-area: catering;
+  text-align: left;
+  font: normal normal normal 82px/79px Blenda Script;
+  letter-spacing: 0px;
+  color: #f23816;
+  color: #020100;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1200px) {
+  main .top-section header .left-side .catering {
+    font-size: 75px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  main .top-section header .left-side .catering {
+    font-size: 65px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .top-section header .left-side .catering {
+    font-size: 45px;
+  }
+}
+
+main .top-section header .left-side .hollis {
+  grid-area: hollis;
+  width: 100%;
+  align-self: end;
+  display: flex;
+  align-self: flex-end;
+  text-align: left;
+  font: normal normal normal 15px/41px "BioRhyme Expanded";
+  letter-spacing: 0px;
+  color: #020100;
+  opacity: 1;
+  padding-top: 25px;
+}
+
+main .top-section header .right-side {
+  outline: 3px dashed red;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 10px;
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 1000px) {
+  main .top-section header .right-side {
+    margin-top: 40px;
+  }
+}
+
+main .top-section header .right-side .delicious {
+  grid-area: delicious;
+  width: 80%;
+  display: flex;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  font: normal normal normal 18px/35px "BioRhyme Expanded";
+  letter-spacing: 0px;
+  color: #020100;
+  opacity: 1;
+  line-height: 1.8;
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section header .right-side .delicious {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main .top-section header .right-side .delicious {
+    justify-self: flex-start;
+    text-align: left;
+    line-height: 1.5;
+  }
+}
+
+main .top-section header .right-side .orders {
+  grid-area: orders;
+  width: 100%;
+  margin-top: -10px;
+  text-align: center;
+  font: normal normal normal 15px/22px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #020100;
+  opacity: 1;
+  padding-top: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+  main .top-section header .right-side .orders {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section header .right-side .orders {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main .top-section header .right-side .orders {
+    justify-self: flex-start;
+    text-align: left;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main .top-section header .right-side .orders {
+    width: 80%;
+  }
+}
+
+main .top-section header .right-side .price {
+  grid-area: price;
+  width: 80%;
+  height: 100px;
+  margin-top: 10px;
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 900px) {
+  main .top-section header .right-side .price {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .top-section header .right-side .price {
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main .top-section header .right-side .price {
+    justify-content: flex-start;
+    margin-bottom: 0px;
+    margin-top: 0;
+    width: 80%;
+  }
+}
+
+main .top-section header .right-side .price .only {
+  align-items: center;
+  text-align: left;
+  font: normal normal bold 63px/59px Times New Roman;
+  letter-spacing: 0px;
+  color: #f23816;
+  color: #020100;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section header .right-side .price .only {
+    font-size: 50px;
+  }
+}
+
+main .top-section header .right-side .price .dollars {
+  text-align: left;
+  font: normal normal bold 67px/57px Times New Roman;
+  letter-spacing: 0px;
+  color: #f23816;
+  color: #020100;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section header .right-side .price .dollars {
+    font-size: 50px;
+  }
+}
+
+main .top-section header .right-side .price .cents {
+  text-align: left;
+  font: normal normal bold 44px/61px Times New Roman;
+  letter-spacing: 0px;
+  color: #f23816;
+  color: #020100;
+  text-transform: lowercase;
+  opacity: 1;
+  position: relative;
+  top: -12px;
+  left: -5px;
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section header .right-side .price .cents {
+    font-size: 30px;
+    top: -14px;
+  }
+}
+
+main .top-section header .right-side .price .asteric {
+  text-align: left;
+  font: normal normal bold 35px/62px Times New Roman;
+  letter-spacing: 0px;
+  color: #f23816;
+  color: #020100;
+  text-transform: lowercase;
+  opacity: 1;
+  position: relative;
+  top: -15px;
+  left: -5px;
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section header .right-side .price .asteric {
+    font-size: 25px;
+    top: -17px;
+  }
+}
+
+main .top-section header .right-side .phone-number {
+  grid-area: phone;
+  text-align: center;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  font: normal normal bold 54px/49px Times New Roman;
+  letter-spacing: 0px;
+  color: #f23816;
+  color: #020100;
+  opacity: 1;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1050px) {
+  main .top-section header .right-side .phone-number {
+    margin-top: 10px;
+  }
+}
+
+main .top-section header .right-side .phone-number a {
+  text-decoration: none;
+  color: #f23816;
+  color: #020100;
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section header .right-side .phone-number {
+    font-size: 43px;
+    top: -10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main .top-section header .right-side .phone-number {
+    justify-self: flex-start;
+    margin-bottom: 15px;
+  }
+}
+
+main .top-section header .right-side .pickup {
+  grid-area: pickup;
+  width: 100%;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+  font: normal normal normal 18px/22px "BioRhyme Expanded";
+  letter-spacing: 0px;
+  color: #020100;
+  opacity: 1;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 1050px) {
+  main .top-section header .right-side .pickup {
+    width: 80%;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .top-section header .right-side .pickup {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main .top-section header .right-side .pickup {
+    justify-self: flex-start;
+    text-align: left;
+    margin-bottom: 15px;
+    line-height: 1.8;
+  }
+}
+
+main .menu-section {
+  background-image: url("../images/blackboard2.jpg");
+  opacity: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+  padding-top: 30px;
+}
+
+main .menu-section .menu-header {
+  width: 84%;
+  text-align: left;
+  font: normal normal normal 60px/60px cursive;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 1;
+  margin: 0 auto;
+  margin: 0 auto;
+  font: normal normal normal 62px/60px CHAWP;
+  font-family: CHAWP, cursive;
+  letter-spacing: 0.62px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 1;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  main .menu-section .menu-header {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+}
+
+main .menu-section .menu-header p {
+  display: flex;
+  align-items: flex-end;
+}
+
+main .menu-section .menu-header img {
+  width: 60%;
+  box-shadow: 0px 15px 18px #00000099;
+  border: 12px solid #ffffff;
+  transform: matrix(0.99, -0.12, 0.12, 0.99, 0, 0);
+  position: relative;
+  top: 20px;
+  left: 0px;
+  margin-left: 100px;
+}
+
+@media screen and (max-width: 800px) {
+  main .menu-section .menu-header img {
+    top: 0;
+    width: 80%;
+  }
+}
+
+main .menu-section .menu-header .shredded-container {
+  outline: 3px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  left: -25px;
+  top: -10px;
+}
+
+main .menu-section .menu-header .shredded-container .shredded {
+  text-transform: none;
+  text-align: left;
+  font: normal normal normal 27px/30px Itim;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+main .menu-section .menu-item {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+  width: 84%;
+  margin-bottom: 75px;
+}
+
+@media screen and (max-width: 900px) {
+  main .menu-section .menu-item {
+    width: 90%;
+  }
+}
+
+main .menu-section .menu-item .day-header {
+  text-align: left;
+  font: normal normal normal 43px/60px Itim;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 700px) {
+  main .menu-section .menu-item .day-header {
+    font-size: 30px;
+    line-height: 1;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main .menu-section .menu-item .day-header {
+    line-height: 0.9;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .menu-section .menu-item .day-header {
+    font-size: 25px;
+    line-height: 0.8;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  main .menu-section .menu-item .day-header {
+    font-size: 20px;
+  }
+}
+
+main .menu-section .menu-item .meal-summary {
+  margin-top: 5px;
+  text-align: left;
+  font: normal normal normal 60px/60px CHAWP;
+  letter-spacing: 0.62px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 1;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  main .menu-section .menu-item .meal-summary {
+    font-size: 48px;
+    line-height: 1;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .menu-section .menu-item .meal-summary {
+    font-size: 32px;
+    line-height: 1;
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  main .menu-section .menu-item .meal-summary {
+    font-size: 25px;
+  }
+}
+
+main .menu-section .menu-item .meal-content {
+  width: 100%;
+  text-align: left;
+  font: normal normal normal 43px/60px Itim;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: lowercase;
+  opacity: 1;
+  line-height: 1;
+}
+
+@media screen and (max-width: 700px) {
+  main .menu-section .menu-item .meal-content {
+    font-size: 30px;
+    line-height: 0.9;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  main .menu-section .menu-item .meal-content {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .menu-section .menu-item {
+    margin-bottom: 50px;
+  }
+}
+
+.footer {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  padding-top: 36px;
+  padding-bottom: 40px;
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+  min-width: 300px;
+}
+
+.footer .copy1 {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  font: normal normal normal 20px/32px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #f23816;
+  padding-bottom: 20px;
+  font: normal normal normal 19px/30px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.footer .copy2 {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+  font: normal normal normal 16px/28px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #676462;
+  opacity: 1;
+  opacity: 1;
+  font: normal normal normal 16px/27px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.footer .phone-etc {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  .footer .phone-etc {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+
+.footer .phone-etc .footer-phone-number {
+  text-align: center;
+  font: normal normal bold 54px/49px Times New Roman;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  .footer .phone-etc .footer-phone-number {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    align-self: center;
+  }
+}
+
+.footer .phone-etc .footer-images {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer .phone-etc .footer-images img {
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .footer .phone-etc .footer-images img {
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 45%;
+  }
+}
+
+.footer .alchemy {
+  margin: 0 auto;
+  width: 95%;
+  height: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.footer .alchemy p {
+  text-align: left;
+  font: normal normal normal 14px/49px Arial;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.footer .alchemy img {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  opacity: 1;
+  height: 18px;
+  width: 18px;
+}
+/*# sourceMappingURL=menu3.css.map */

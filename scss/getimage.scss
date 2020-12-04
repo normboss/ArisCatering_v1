@@ -1,0 +1,14 @@
+main {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 100px;
+    font-size: 35px;
+
+    .box__dragndrop,
+    .box__uploading,
+    .box__success,
+    .box__error {
+        display: none;
+    }
+
+}

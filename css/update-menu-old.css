@@ -1,0 +1,662 @@
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme+Expanded&family=Leckerli+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme+Expanded&family=Leckerli+One&display=swap");
+@font-face {
+  font-family: remedy;
+  src: local("C:/xampp/htdocs/ArisCatering/files/fonts/Funstuff-Bold.ttf.woff");
+}
+
+@font-face {
+  font-family: "Funstuff-Bold";
+  src: url("Funstuff-Bold.ttf.woff") format("woff"), url("Funstuff-Bold.ttf.svg#Funstuff-Bold") format("svg"), url("Funstuff-Bold.ttf.eot"), url("Funstuff-Bold.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CHAWP;
+  src: url("chawp.otf");
+  src: url("chawp.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Blenda Script";
+  src: url("Blenda Script.otf");
+}
+
+@font-face {
+  font-family: remedy;
+  src: local("C:/xampp/htdocs/ArisCatering/files/fonts/Funstuff-Bold.ttf.woff");
+}
+
+@font-face {
+  font-family: "Funstuff-Bold";
+  src: url("Funstuff-Bold.ttf.woff") format("woff"), url("Funstuff-Bold.ttf.svg#Funstuff-Bold") format("svg"), url("Funstuff-Bold.ttf.eot"), url("Funstuff-Bold.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1280px;
+  height: 3000px;
+  background-color: #f2ed7733;
+}
+
+main .top-section {
+  height: auto;
+  display: flex;
+  margin-bottom: 75px;
+}
+
+@media screen and (max-width: 1250px) {
+  main .top-section {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+main .top-section .left-part {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1250px) {
+  main .top-section .left-part {
+    width: 100%;
+    align-self: center;
+  }
+}
+
+main .top-section .left-part .logo-block {
+  background: #169f8fcc 0% 0% no-repeat padding-box;
+  display: flex;
+}
+
+main .top-section .left-part .logo-block .logo-text {
+  text-align: left;
+  font: normal normal normal 56px/51px HucklebuckJF;
+  letter-spacing: 0px;
+  color: #f7fcfb;
+  opacity: 1;
+  width: 192px;
+  margin-left: 62px;
+  margin-top: 34px;
+  font-family: "Leckerli One", cursive;
+}
+
+@media screen and (max-width: 750px) {
+  main .top-section .left-part .logo-block .logo-text {
+    margin-left: 15px;
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  main .top-section .left-part .logo-block .logo-text {
+    font-size: 32px;
+    margin-left: 25px;
+  }
+}
+
+main .top-section .left-part .logo-block img {
+  width: 25%;
+  height: 25%;
+  margin-bottom: 10px;
+}
+
+main .top-section .left-part .aris-catering {
+  text-align: left;
+  font: normal normal normal 75px/68px HucklebuckJF;
+  letter-spacing: 0px;
+  color: #f23816;
+  opacity: 1;
+  font-family: "Leckerli One", cursive;
+  padding-left: 56px;
+  border-top: 14px solid #f23816;
+  border-bottom: 14px solid #f23816;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  main .top-section .left-part .aris-catering {
+    font-size: 50px;
+  }
+}
+
+main .top-section .right-part {
+  width: 50%;
+  position: relative;
+  padding-left: 40px;
+}
+
+@media screen and (max-width: 1250px) {
+  main .top-section .right-part {
+    width: 75%;
+    align-self: center;
+    margin: 0 auto;
+    padding-left: 10%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  main .top-section .right-part {
+    width: 95%;
+    padding-left: 10px;
+  }
+}
+
+main .top-section .right-part .style1 {
+  display: inline-block;
+  text-align: left;
+  font: normal normal normal 25px/49px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #f23816;
+  opacity: 1;
+}
+
+@media screen and (max-width: 660px) {
+  main .top-section .right-part .style1 {
+    font-size: 24px;
+  }
+}
+
+main .top-section .right-part .style2 {
+  text-align: left;
+  font: normal normal normal 56px/51px Epitaph;
+  letter-spacing: 0px;
+  color: #169f8f;
+  opacity: 1;
+}
+
+@media screen and (max-width: 660px) {
+  main .top-section .right-part .style2 {
+    font-size: 36px;
+  }
+}
+
+main .top-section .right-part .style3 {
+  text-align: left;
+  font: normal normal normal 56px/51px "Funstuff-Bold";
+  letter-spacing: 0px;
+  color: #f23816;
+  opacity: 1;
+  font-family: "Funstuff-Bold", Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 660px) {
+  main .top-section .right-part .style3 {
+    font-size: 36px;
+  }
+}
+
+main .top-section .right-part .style4 {
+  text-align: left;
+  font: normal normal normal 25px/49px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #169f8f;
+  opacity: 1;
+}
+
+@media screen and (max-width: 660px) {
+  main .top-section .right-part .style4 {
+    font-size: 22px;
+  }
+}
+
+main .top-section .right-part .style5 {
+  display: inline-block;
+  text-align: left;
+  font: normal normal normal 25px/49px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #169f8f;
+  opacity: 1;
+  position: relative;
+}
+
+@media screen and (max-width: 660px) {
+  main .top-section .right-part .style5 {
+    font-size: 20px;
+  }
+}
+
+main .top-section .right-part .style5 #or-id {
+  position: absolute;
+  top: -15px;
+  left: -10px;
+}
+
+@media screen and (max-width: 650px) {
+  main .top-section .right-part .style5 #or-id {
+    font-size: 20px;
+  }
+}
+
+main .top-section .right-part .style5 #delivery-id {
+  width: 200px;
+  position: relative;
+  left: 15px;
+  top: 8px;
+  padding-right: 10px;
+}
+
+main .top-section .right-part .style6 {
+  text-align: left;
+  font: normal normal normal 57px/52px Epitaph;
+  letter-spacing: 0px;
+  color: #f23816;
+  opacity: 1;
+  position: relative;
+  top: 10px;
+}
+
+@media screen and (max-width: 660px) {
+  main .top-section .right-part .style6 {
+    font-size: 36px;
+  }
+}
+
+main .top-section .right-part .style7 {
+  margin-top: 20px;
+  text-align: left;
+  font: normal normal normal 56px/51px Epitaph;
+  letter-spacing: -2px;
+  color: #f23816;
+  opacity: 1;
+  display: inline-block;
+}
+
+main .top-section .right-part .style7 #to-id {
+  position: absolute;
+  top: -25px;
+  left: -5px;
+}
+
+main .top-section .right-part .style7 #order-id {
+  width: 200px;
+  position: relative;
+  left: 15px;
+}
+
+@media screen and (max-width: 660px) {
+  main .top-section .right-part .style7 {
+    font-size: 36px;
+  }
+}
+
+main .top-section .right-part .style8 {
+  margin-top: 60px;
+  text-align: left;
+  font: normal normal normal 25px/49px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #169f8f;
+  opacity: 1;
+}
+
+@media screen and (max-width: 660px) {
+  main .top-section .right-part .style8 {
+    margin-top: 20px;
+    font-size: 22px;
+  }
+}
+
+main .top-section .right-part #or-id {
+  position: relative;
+  top: -15px;
+}
+
+@media screen and (max-width: 660px) {
+  main .top-section .right-part #or-id {
+    font-size: 26px;
+  }
+}
+
+main .top-section .right-part #deliver-id {
+  position: relative;
+  left: 25px;
+}
+
+@media screen and (max-width: 660px) {
+  main .top-section .right-part #deliver-id {
+    font-size: 26px;
+  }
+}
+
+main form .menu-section {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 79px;
+  column-gap: 45px;
+  justify-items: center;
+  padding-left: 66px;
+  padding-right: 62px;
+}
+
+@media screen and (max-width: 1250px) {
+  main form .menu-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main form .menu-section {
+    grid-template-columns: 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+main form .menu-section .menu-item {
+  margin: 0 auto;
+  text-align: center;
+  width: 325px;
+  height: 568px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 12px 14px #00000029;
+  opacity: 1;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  main form .menu-section .menu-item {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main form .menu-section .menu-item {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main form .menu-section .menu-item {
+    padding-left: 5px;
+  }
+}
+
+main form .menu-section .menu-item .day-header {
+  text-align: left;
+  font: normal normal normal 42px/48px Epitaph;
+  letter-spacing: 0px;
+  color: #f7fafa;
+  opacity: 1;
+  width: 345px;
+  height: 77px;
+  transform: matrix(0.99, -0.14, 0.14, 0.99, 0, 0);
+  box-shadow: 0px 10px 12px #00000029;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  position: relative;
+  top: 5px;
+  left: -55px;
+}
+
+@media screen and (max-width: 600px) {
+  main form .menu-section .menu-item .day-header {
+    left: -25px;
+  }
+}
+
+main form .menu-section .menu-item .day-header textarea {
+  outline: 5px dashed red;
+  position: relative;
+  text-align: left;
+  font: normal normal normal 42px/48px Epitaph;
+  letter-spacing: 0px;
+  color: #f7fafa;
+  opacity: 1;
+  max-width: 180px;
+  width: 100%;
+  height: 60px;
+}
+
+@media screen and (max-width: 900px) {
+  main form .menu-section .menu-item .day-header textarea {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main form .menu-section .menu-item .day-header textarea {
+    width: 95%;
+  }
+}
+
+main form .menu-section .menu-item #monday {
+  background: #169f8f 0% 0% no-repeat padding-box;
+}
+
+main form .menu-section .menu-item #monday textarea {
+  background: #169f8f 0% 0% no-repeat padding-box;
+}
+
+main form .menu-section .menu-item #tuesday {
+  background: #f23816 0% 0% no-repeat padding-box;
+}
+
+main form .menu-section .menu-item #tuesday textarea {
+  background: #f23816 0% 0% no-repeat padding-box;
+  outline: 5px dashed white;
+}
+
+main form .menu-section .menu-item #wednesday {
+  background: #169f8f 0% 0% no-repeat padding-box;
+}
+
+main form .menu-section .menu-item #wednesday textarea {
+  background: #169f8f 0% 0% no-repeat padding-box;
+}
+
+main form .menu-section .menu-item #thursday {
+  background: #f23816 0% 0% no-repeat padding-box;
+}
+
+main form .menu-section .menu-item #thursday textarea {
+  background: #f23816 0% 0% no-repeat padding-box;
+  outline: 5px dashed white;
+}
+
+main form .menu-section .menu-item #friday {
+  background: #169f8f 0% 0% no-repeat padding-box;
+}
+
+main form .menu-section .menu-item #friday textarea {
+  background: #169f8f 0% 0% no-repeat padding-box;
+}
+
+main form .menu-section .menu-item .meal-summary {
+  margin-top: 50px;
+  text-align: left;
+  font: normal normal normal 51px/51px "Funstuff-Bold";
+  letter-spacing: 0px;
+  color: #f23816;
+  margin-bottom: 20px;
+}
+
+main form .menu-section .menu-item .meal-summary textarea {
+  outline: 5px dashed red;
+  width: 300px;
+  height: 160px;
+  text-align: left;
+  font: normal normal normal 41px/51px "Funstuff-Bold";
+  letter-spacing: 0px;
+  color: #f23816;
+}
+
+@media screen and (max-width: 900px) {
+  main form .menu-section .menu-item .meal-summary textarea {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main form .menu-section .menu-item .meal-summary textarea {
+    width: 95%;
+  }
+}
+
+main form .menu-section .menu-item .meal-content {
+  text-align: left;
+  font: normal normal normal 22px/34px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #676462;
+  opacity: 1;
+  font-family: "BioRhyme Expanded", serif;
+}
+
+main form .menu-section .menu-item .meal-content textarea {
+  outline: 5px dashed red;
+  width: 300px;
+  height: 240px;
+  text-align: left;
+  font: normal normal normal 22px/34px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #676462;
+  opacity: 1;
+  font-family: "BioRhyme Expanded", serif;
+}
+
+@media screen and (max-width: 900px) {
+  main form .menu-section .menu-item .meal-content textarea {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main form .menu-section .menu-item .meal-content textarea {
+    width: 95%;
+  }
+}
+
+main form .menu-section .more-stuff {
+  position: relative;
+  top: -10px;
+}
+
+main form .menu-section .more-stuff .all-entrees {
+  text-align: left;
+  font: normal normal normal 62px/62px "Funstuff-Bold";
+  font-family: "Funstuff-Bold", Arial, Helvetica, sans-serif;
+  letter-spacing: 0px;
+  color: #f23816;
+  opacity: 1;
+}
+
+main form .menu-section .more-stuff .dollar-sign {
+  position: relative;
+  font: normal normal normal 46px/63px Arial;
+  letter-spacing: -35px;
+  color: #f23816;
+  text-transform: lowercase;
+  opacity: 1;
+  top: -15px;
+}
+
+main form .menu-section .more-stuff .dollar-amount {
+  position: relative;
+  font: normal normal normal 62px/63px Arial;
+  letter-spacing: -8px;
+  color: #f23816;
+  opacity: 1;
+  left: 15px;
+}
+
+main form .menu-section .more-stuff .cents-amount {
+  position: relative;
+  font: normal normal normal 38px/63px Arial;
+  letter-spacing: -3px;
+  color: #f23816;
+  text-transform: lowercase;
+  opacity: 1;
+  left: 15px;
+  top: -15px;
+}
+
+main form .menu-section .more-stuff .happy {
+  text-align: left;
+  font: normal normal normal 18px/34px BioRhyme Expanded;
+  letter-spacing: 0px;
+  opacity: 1;
+  margin-bottom: 15px;
+}
+
+main form .menu-section .more-stuff .pleased {
+  text-align: left;
+  font: normal normal normal 18px/34px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #f23816;
+}
+
+main form .menu-section .more-stuff .phone-number {
+  text-align: left;
+  font: normal normal normal 56px/51px Epitaph;
+  letter-spacing: 0px;
+  color: #f23816;
+  opacity: 1;
+}
+
+main form .submit-button {
+  margin-top: 20px;
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  border: 5px dashed red;
+  border-radius: 25px;
+  font-size: 50px;
+}
+
+main .images {
+  margin-top: 104px;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+main .images .image1 {
+  width: 495px;
+  background-image: url("../images/image1.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .images .image2 {
+  width: 660px;
+  background-image: url("../images/image2.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .copy1 {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  font: normal normal normal 20px/32px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #f23816;
+  margin-bottom: 15px;
+}
+
+main .copy2 {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  font: normal normal normal 16px/28px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #676462;
+  opacity: 1;
+}
+/*# sourceMappingURL=update-menu-old.css.map */

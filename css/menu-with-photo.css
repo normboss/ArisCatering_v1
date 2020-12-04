@@ -1,0 +1,745 @@
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme+Expanded&family=Leckerli+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@font-face {
+  font-family: remedy;
+  src: local("C:/xampp/htdocs/ArisCatering/files/fonts/Funstuff-Bold.ttf.woff");
+}
+
+@font-face {
+  font-family: "Funstuff-Bold";
+  src: url("Funstuff-Bold.ttf.woff") format("woff"), url("Funstuff-Bold.ttf.svg#Funstuff-Bold") format("svg"), url("Funstuff-Bold.ttf.eot"), url("Funstuff-Bold.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CHAWP;
+  src: url("chawp.otf");
+  src: url("chawp.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Blenda Script";
+  src: url("Blenda Script.otf");
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .top-section {
+  background-color: #E8E2D9;
+  max-width: 1280pc;
+  width: 100%;
+  margin-top: 0;
+  height: auto;
+  padding-bottom: 25px;
+  display: grid;
+  grid-template-areas: "sp1 sp1 sp1 cookin logo blank4 blank4 blank4 blank4 blank4 blank4 blank4 blank4 " "sp1 sp1 sp1 cookin   logo     blank    delicious delicious delicious delicious blank3 blank3 blank3" "sp1 sp1 sp1 cookin   logo     blank    price     price     price     price    blank3 blank3 blank3" "sp1 sp1 sp1 cookin   logo     blank    pickup    pickup    pickup    pickup   blank3 blank3 blank3" "sp1 sp1 sp1 catering catering blank2 phone     phone     phone     phone    blank3 blank3 blank3" "sp1 sp1 sp1 hollis   hollis   blank2   orders    orders    orders    orders   blank3 blank3 blank3";
+}
+
+@media screen and (max-width: 900px) {
+  main .top-section {
+    grid-template-areas: "sp1 cookin	logo	blank" "sp1 cookin	logo	blank" "sp1 cookin	logo	blank" "sp1 catering	catering	catering" "sp1 hollis	hollis	hollis" "sp1 delicious	delicious	delicious" "sp1 price	price	price	" "sp1 pickup	pickup	pickup		" "sp1 phone	phone	phone		" "sp1 orders	orders	orders		";
+    justify-content: center;
+    justify-self: center;
+  }
+}
+
+main .top-section .sp1 {
+  grid-area: sp1;
+  width: 100px;
+}
+
+@media screen and (max-width: 950px) {
+  main .top-section .sp1 {
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .top-section .sp1 {
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main .top-section .sp1 {
+    width: 25px;
+  }
+}
+
+main .top-section .blank3 {
+  width: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+  main .top-section .blank3 {
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  main .top-section .blank3 {
+    width: 25px;
+  }
+}
+
+main .top-section .blank4 {
+  width: 50%;
+  height: 50px;
+}
+
+main .top-section .blank,
+main .top-section .blank2 {
+  width: 0px;
+}
+
+main .top-section .cookin {
+  grid-area: cookin;
+  text-align: left;
+  font: normal normal normal 62px/63px Blenda Script;
+  letter-spacing: 0px;
+  color: #f23816;
+  color: #020100;
+  opacity: 1;
+  align-self: end;
+  justify-self: start;
+  padding-left: 0;
+  position: relative;
+  width: 200px;
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section .cookin {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .top-section .cookin {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .top-section .cookin {
+    width: 50%;
+  }
+}
+
+main .top-section .logo {
+  grid-area: logo;
+  margin-top: 34px;
+  align-self: end;
+  min-width: 100px;
+}
+
+@media screen and (max-width: 1000px) {
+  main .top-section .logo {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .top-section .logo {
+    width: 150px;
+  }
+}
+
+main .top-section .leftspace {
+  outline: 3px solid red;
+  grid-area: leftspace;
+  width: 300px;
+}
+
+main .top-section .catering {
+  grid-area: catering;
+  text-align: left;
+  font: normal normal normal 82px/79px Blenda Script;
+  letter-spacing: 0px;
+  color: #f23816;
+  color: #020100;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section .catering {
+    font-size: 65px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .top-section .catering {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .top-section .catering {
+    font-size: 45px;
+  }
+}
+
+main .top-section .hollis {
+  grid-area: hollis;
+  align-self: end;
+  display: flex;
+  align-self: flex-end;
+  text-align: left;
+  font: normal normal normal 15px/41px "BioRhyme Expanded";
+  letter-spacing: 0px;
+  color: #020100;
+  opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+  main .top-section .hollis {
+    margin-bottom: 25px;
+    width: 80%;
+    line-height: 1.5;
+  }
+}
+
+main .top-section .delicious {
+  grid-area: delicious;
+  width: 80%;
+  display: flex;
+  text-align: center;
+  align-self: end;
+  justify-self: center;
+  font: normal normal normal 18px/35px "BioRhyme Expanded";
+  letter-spacing: 0px;
+  color: #020100;
+  opacity: 1;
+  line-height: 1.8;
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section .delicious {
+    font-size: 16px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main .top-section .delicious {
+    justify-self: flex-start;
+    text-align: left;
+    line-height: 1.5;
+  }
+}
+
+main .top-section .orders {
+  grid-area: orders;
+  margin-top: -10px;
+  align-self: end;
+  display: flex;
+  justify-self: center;
+  align-self: flex-start;
+  text-align: center;
+  font: normal normal normal 15px/22px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #020100;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section .orders {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main .top-section .orders {
+    justify-self: flex-start;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main .top-section .orders {
+    width: 80%;
+  }
+}
+
+main .top-section .price {
+  grid-area: price;
+  width: 80%;
+  height: 100px;
+  margin-top: 10px;
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 900px) {
+  main .top-section .price {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main .top-section .price {
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    width: 80%;
+  }
+}
+
+main .top-section .price .only {
+  align-items: center;
+  text-align: left;
+  font: normal normal bold 63px/59px Times New Roman;
+  letter-spacing: 0px;
+  color: #f23816;
+  color: #020100;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section .price .only {
+    font-size: 50px;
+  }
+}
+
+main .top-section .price .dollars {
+  text-align: left;
+  font: normal normal bold 67px/57px Times New Roman;
+  letter-spacing: 0px;
+  color: #f23816;
+  color: #020100;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section .price .dollars {
+    font-size: 50px;
+  }
+}
+
+main .top-section .price .cents {
+  text-align: left;
+  font: normal normal bold 44px/61px Times New Roman;
+  letter-spacing: 0px;
+  color: #f23816;
+  color: #020100;
+  text-transform: lowercase;
+  opacity: 1;
+  position: relative;
+  top: -17px;
+  left: -5px;
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section .price .cents {
+    font-size: 30px;
+    top: -14px;
+  }
+}
+
+main .top-section .price .asteric {
+  text-align: left;
+  font: normal normal bold 35px/62px Times New Roman;
+  letter-spacing: 0px;
+  color: #f23816;
+  color: #020100;
+  text-transform: lowercase;
+  opacity: 1;
+  position: relative;
+  top: -25px;
+  left: -10px;
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section .price .asteric {
+    font-size: 25px;
+    top: -17px;
+  }
+}
+
+main .top-section .phone-number {
+  grid-area: phone;
+  text-align: center;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  font: normal normal bold 54px/49px Times New Roman;
+  letter-spacing: 0px;
+  color: #f23816;
+  opacity: 1;
+}
+
+main .top-section .phone-number a {
+  text-decoration: none;
+  color: #f23816;
+  color: #020100;
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section .phone-number {
+    font-size: 43px;
+    top: -10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main .top-section .phone-number {
+    justify-self: flex-start;
+    margin-bottom: 15px;
+  }
+}
+
+main .top-section .pickup {
+  grid-area: pickup;
+  width: 80%;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+  font: normal normal normal 18px/22px "BioRhyme Expanded";
+  letter-spacing: 0px;
+  color: #020100;
+  opacity: 1;
+  line-height: 1.8;
+}
+
+@media screen and (max-width: 1050px) {
+  main .top-section .pickup {
+    width: 80%;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main .top-section .pickup {
+    justify-self: flex-start;
+    text-align: left;
+    margin-bottom: 15px;
+    line-height: 1.8;
+  }
+}
+
+main .menu-section {
+  background-image: url("../images/blackboard2.jpg");
+  z-index: 1;
+  opacity: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+  padding-top: 30px;
+}
+
+main .menu-section .meal-photo {
+  position: relative;
+  width: 100%;
+  min-width: 200px;
+  height: 500px;
+  margin-bottom: 50px;
+}
+
+main .menu-section .meal-photo img {
+  z-index: 3;
+}
+
+main .menu-section .meal-photo #inner-meal-photo {
+  border: 5px solid white;
+  margin: 20px;
+  width: 80%;
+  min-width: 200px;
+  height: 80vw;
+  max-height: 500px;
+  opacity: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 0px 5px 6px #020100;
+  box-shadow: 5px 10px #888888;
+  margin: 20px;
+  position: absolute;
+  z-index: -1;
+  transform: matrix(0.98, -0.17, 0.17, 0.98, 0, 0);
+  margin-top: 100px;
+  left: 5%;
+}
+
+main .menu-section .meal-photo #inner-meal-photo img {
+  width: 1000px;
+  height: 300px;
+  width: 80vw;
+}
+
+main .menu-section .menu-header {
+  height: 76px;
+  text-align: left;
+  font: normal normal normal 60px/60px cursive;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 1;
+  margin: 0 auto;
+  margin-top: 124px;
+  margin-bottom: 50px;
+  width: 178px;
+  height: 63px;
+  text-align: left;
+  font: normal normal normal 62px/60px CHAWP;
+  font-family: CHAWP, cursive;
+  letter-spacing: 0.62px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+main .menu-section .menu-item {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+  width: 80%;
+}
+
+@media screen and (max-width: 900px) {
+  main .menu-section .menu-item {
+    width: 90%;
+  }
+}
+
+main .menu-section .menu-item .day-header {
+  text-align: left;
+  font: normal normal normal 43px/60px Itim;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 500px) {
+  main .menu-section .menu-item .day-header {
+    font-size: 35px;
+  }
+}
+
+main .menu-section .menu-item .meal-summary {
+  margin-top: 5px;
+  text-align: left;
+  font: normal normal normal 62px/60px CHAWP;
+  letter-spacing: 0.62px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 1;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  main .menu-section .menu-item .meal-summary {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .menu-section .menu-item .meal-summary {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+}
+
+main .menu-section .menu-item .meal-content {
+  width: 100%;
+  text-align: left;
+  font: normal normal normal 43px/60px Itim;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: lowercase;
+  opacity: 1;
+  line-height: 1;
+}
+
+@media screen and (max-width: 700px) {
+  main .menu-section .menu-item .meal-content {
+    font-size: 30px;
+  }
+}
+
+main .menu-section .images {
+  margin: 0 auto;
+  margin-top: 50px;
+  position: relative;
+  justify-content: center;
+  align-items: baseline;
+  width: 100%;
+}
+
+main .menu-section .images img {
+  width: 100%;
+}
+
+main .menu-section .images #tape1 {
+  width: 40px;
+  z-index: 10;
+  border: 0px;
+  left: 200px;
+  top: -50px;
+  transform: matrix(0.98, -0.17, 0.17, 0.98, 0, 0);
+}
+
+main .menu-section .images #tape2 {
+  width: 40px;
+  z-index: 10;
+  border: 0px;
+  left: 550px;
+  top: 35px;
+  transform: matrix(0.99, 0.14, -0.14, 0.99, 0, 0);
+}
+
+main .menu-section .images #tape3 {
+  width: 40px;
+  z-index: 10;
+  border: 0px;
+  left: 850px;
+  top: -50px;
+}
+
+main .menu-section .images #image1 {
+  width: 358px;
+  height: 361px;
+  transform: matrix(0.99, 0.14, -0.14, 0.99, 0, 0);
+  left: 40%;
+  top: 100px;
+  z-index: 2;
+}
+
+main .menu-section .images #image2 {
+  width: 535px;
+  height: 442px;
+  transform: matrix(0.98, -0.17, 0.17, 0.98, 0, 0);
+  left: -15px;
+}
+
+main .menu-section .images #image3 {
+  width: 432px;
+  height: 253px;
+  left: 63%;
+}
+
+main .more-stuff {
+  position: relative;
+  top: -10px;
+  display: none;
+}
+
+main .more-stuff .all-entrees {
+  text-align: left;
+  font: normal normal normal 62px/62px "Funstuff-Bold";
+  font-family: "Funstuff-Bold", Arial, Helvetica, sans-serif;
+  letter-spacing: 0px;
+  color: #f23816;
+  opacity: 1;
+}
+
+main .more-stuff .dollar-sign {
+  position: relative;
+  font: normal normal normal 46px/63px Arial;
+  letter-spacing: -35px;
+  color: #f23816;
+  text-transform: lowercase;
+  opacity: 1;
+  top: -15px;
+}
+
+main .more-stuff .dollar-amount {
+  position: relative;
+  font: normal normal normal 62px/63px Arial;
+  letter-spacing: -8px;
+  color: #f23816;
+  opacity: 1;
+  left: 15px;
+}
+
+main .more-stuff .cents-amount {
+  position: relative;
+  font: normal normal normal 38px/63px Arial;
+  letter-spacing: -3px;
+  color: #f23816;
+  text-transform: lowercase;
+  opacity: 1;
+  left: 15px;
+  top: -15px;
+}
+
+main .more-stuff .happy {
+  text-align: left;
+  font: normal normal normal 18px/34px BioRhyme Expanded;
+  letter-spacing: 0px;
+  opacity: 1;
+  margin-bottom: 15px;
+}
+
+main .more-stuff .pleased {
+  text-align: left;
+  font: normal normal normal 18px/34px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #f23816;
+}
+
+main .more-stuff .phone-number {
+  text-align: left;
+  font: normal normal normal 56px/51px Epitaph;
+  letter-spacing: 0px;
+  color: #f23816;
+  opacity: 1;
+}
+
+main .footer {
+  background: #0000004d 0% 0% no-repeat padding-box;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  height: auto;
+}
+
+main .footer .copy1 {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  font: normal normal normal 20px/32px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #f23816;
+  padding-bottom: 30px;
+  text-align: center;
+  font: normal normal normal 21px/30px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+main .footer .copy2 {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  font: normal normal normal 16px/28px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #676462;
+  opacity: 1;
+  text-align: center;
+  font: normal normal normal 17px/27px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+/*# sourceMappingURL=menu-with-photo.css.map */

@@ -1,0 +1,14 @@
+main {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 100px;
+  font-size: 35px;
+}
+
+main .box__dragndrop,
+main .box__uploading,
+main .box__success,
+main .box__error {
+  display: none;
+}
+/*# sourceMappingURL=getimage.css.map */
