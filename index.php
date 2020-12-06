@@ -25,8 +25,9 @@
             <header>
 
                 <div class="left-side">
-                    <div class="cookin-and-logo">
-                        <div class="box cookin">
+
+                    <div class="cookin-and-logo1">
+                        <div class="box1 cookin">
                             <div class="cookin1">
                                 See
                             </div>
@@ -40,15 +41,15 @@
                                 at
                             </div>
                         </div>
-                        <img class="box logo" src="./images/chef_black_whte_trans1.png">
-                        <!-- <img class="box logo" src="./images/chef_black_whte_trans1.png"> -->
+                        <img class="box1 logo" src="./images/chef_black_whte_trans1.png">
+                        <div class="blank">
+                        </div>
+                        <div class="box1 catering">
+                            Ari's Catering!
+                        </div>
+                    </div>
 
-                    </div>
-                    <div class="box blank">
-                    </div>
-                    <div class="box catering">
-                        Ari's Catering!
-                    </div>
+
                     <div class="box hollis">
                         Serving the Hollis,&nbsp;NH&nbsp;area
                     </div>
@@ -56,18 +57,22 @@
 
                 <div class="right-side">
                     <div class="box delicious">
-                        Delicious daily entrees with fruit, snack & drink
+                        Delicious daily entrees with fruit,&nbsp;snack & drink
                     </div>
 
-                    <div class="box price">
+                    <div class="box price1">
                         <span class="only">Only&nbsp;</span>
                         <span class="dollars">$12</span>
                         <span class="cents">99</span>
                         <span class="asteric">*</span>
+                        <div class="pickup">
+                        Picked up
+                        </div>
                     </div>
 
-                    <div class="box pickup">
-                        *Pickup, or 3+ orders delivered for additional $5.99
+                    <div class="box delivery">
+                        <!-- Add $5 for delivery, or get free delivery for 3 or more same&#8209;day&nbsp;orders -->
+                        *Add $5 for delivery, or free delivery for 3+ same&#8209;day orders to same&nbsp;address
                     </div>
 
                     <div class="box phone-number">
@@ -75,7 +80,7 @@
                     </div>
 
                     <div class="box orders">
-                        Orders must be placed by X:00PM<br> of the previous day
+                        Call in your order 3 days in advance, and pay with Venmo&nbsp;or&nbsp;cash
                     </div>
                 </div>
             </header>
@@ -117,15 +122,11 @@
                     <?php require './resources/tuesday-date.php';  ?>
                 </div>
                 <div class="meal-summary">
-                    <div class="meal-summary">
-                        <div class="meal-summary">
+                    <?php require './resources/tuesday-heading.php';  ?>
+                </div>
 
-                            <?php require './resources/tuesday-heading.php';  ?>
-                        </div>
-                        <div class="meal-content">
-                            <?php require './resources/tuesday-content.php';  ?>
-                        </div>
-                    </div>
+                <div class="meal-content">
+                    <?php require './resources/tuesday-content.php';  ?>
                 </div>
             </div>
 
@@ -189,10 +190,10 @@
         </p>
         <div class="phone-etc">
             <div class="footer-phone-number"> 802-503-2124</div>
-            <div class="footer-images">
+            <!-- <div class="footer-images">
                 <img src="./images/facebook-icon.png" alt="Facebook icon">
                 <img src="./images/instagram-icon.png" alt="Instagram icon">
-            </div>
+            </div> -->
         </div>
 
         <div class="alchemy">

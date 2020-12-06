@@ -1,1 +1,1 @@
-nothing planned
+Grilled baguette with lettuce, tomato and onion. Fruit salad, potato chips, and choice of green or Chai tea.

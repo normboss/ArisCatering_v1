@@ -55,6 +55,10 @@ main {
             // outline: 3px dotted red;
             margin: 0 auto;
             width: 84%;
+            @include max-width-mixin(900px) {
+                width: 90%;
+            }
+
             @include max-width-mixin(350px) {
                 width: 95%;
             }
@@ -71,6 +75,10 @@ main {
                 // outline: 3px solid red;
             }
 
+            .box1 {
+                // outline: 3px solid red;
+            }
+
             .left-side {
                 // outline: 3px dashed red;
                 width: 100%;
@@ -81,6 +89,158 @@ main {
                 margin-top: 41px;
                 @include max-width-mixin(350px) {
                     padding-left: 10px;
+                }
+
+                .cookin-and-logo1 {
+                    // outline: 3px solid blue;
+                    display: grid;
+                    grid-template-areas:
+                        "cookin	logo	blank"
+                        "cookin	logo	blank"
+                        "cookin	logo	blank"
+                        "catering	catering	catering";
+
+                    justify-content: center;
+                    justify-self: center;
+
+                    .cookin {
+                        // outline: 3px solid red;
+                        grid-area: cookin;
+
+                        padding-left: 0;
+                        position: relative;
+                        // width: 200px;
+
+                        text-align: left;
+                        font: normal normal normal 50px/50px Blenda Script;
+                        letter-spacing: 0px;
+                        color: #000000;
+                        opacity: 1;
+
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        padding-bottom: 5px;
+
+                        .cookin1 {
+                            line-height: 1.1;
+                        }
+
+                        @include max-width-mixin(1200px) {
+                            font-size: 45px;
+                        }
+                        @include max-width-mixin(1100px) {
+                            font-size: 40px;
+                            line-height: 1.3;
+                        }
+                        @include max-width-mixin(960px) {
+                            font-size: 35px;
+                        }
+                        @include max-width-mixin(820px) {
+                            font-size: 33px;
+                            padding-bottom: 5px;
+                        }
+                        @include max-width-mixin(820px) {
+                            // font-size: 28px;
+                        }
+                        @include max-width-mixin(750px) {
+                            font-size: 52px;
+                            line-height: 1.2;
+                            .cookin1 {
+                                line-height: 1;
+                            }
+                            padding-bottom: 5px;
+
+                        }
+                        @include max-width-mixin(600px) {
+                            font-size: 45px;
+                        }
+                        @include max-width-mixin(500px) {
+                            width: 70%;
+                            font-size: 38px;
+                            padding-bottom: 0;
+                            padding-top: 0;
+                        }
+                    }
+
+                    .logo {
+                        // outline: 5px solid blue;
+                        grid-area: logo;
+
+                        // margin-top: 34px;
+                        align-self: end;
+                        // width: 200px;
+                        min-width: 100px;
+                        // padding-right: 150px;
+
+                        @include max-width-mixin(1000px) {
+                            width: 180px;
+                        }
+                        @include max-width-mixin(900px) {
+                            // width: 50%;
+                            // padding-right: 300px;
+                        }
+                        @include max-width-mixin(800px) {
+                            // padding-right: 150px;
+                        }
+                        @include max-width-mixin(600px) {
+                            // padding-right: 100px;
+                        }
+                        @include max-width-mixin(500px) {
+                            // width: 150px;
+                            padding-right: 0;
+                        }
+                    }
+                    .catering {
+                        // outline: 3px solid red;
+                        grid-area: catering;
+
+                        // display: flex;
+                        // width: 90%;
+                        // width: 526px;
+                        text-align: left;
+                        font: normal normal normal 82px/79px Blenda Script;
+                        letter-spacing: 0px;
+                        color: #f23816;
+                        color: #020100;
+                        opacity: 1;
+                        position: relative;
+                        top: -10px;
+
+                        @include max-width-mixin(1200px) {
+                            font-size: 75px;
+                            top: -12px;
+                        }
+                        @include max-width-mixin(1100px) {
+                            font-size: 65px;
+                            top: -17px;
+                        }
+                        @include max-width-mixin(960px) {
+                            font-size: 60px;
+                            top: -20px;
+                        }
+                        @include max-width-mixin(825px) {
+                            font-size: 55px;
+                        }
+                        @include max-width-mixin(800px) {
+                            font-size: 50px;
+                        }
+                        @include max-width-mixin(750px) {
+                            font-size: 80px;
+                            padding-top: 15px;
+                        }
+                        @include max-width-mixin(600px) {
+                            font-size: 70px;
+                            // padding-top: 15px;
+                        }
+                        @include max-width-mixin(500px) {
+                            font-size: 60px;
+                            // padding-top: 15px;
+                        }
+                        @include max-width-mixin(350px) {
+                            // font-size: 40px;
+                        }
+                    }
                 }
 
                 .cookin-and-logo {
@@ -98,11 +258,15 @@ main {
                         color: #f23816;
                         color: #020100;
                         opacity: 1;
-                        align-self: end;
-                        justify-self: start;
+                        // align-self: end;
+                        // justify-self: start;
                         padding-left: 0;
                         position: relative;
                         // width: 200px;
+
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
 
                         @include max-width-mixin(1200px) {
                             font-size: 55px;
@@ -114,7 +278,7 @@ main {
                             font-size: 38px;
                         }
                         @include max-width-mixin(820px) {
-                            font-size: 32px;
+                            font-size: 30px;
                         }
                         @include max-width-mixin(500px) {
                             width: 70%;
@@ -159,49 +323,19 @@ main {
                     // align-self: flex-end;
                 }
 
-                .catering {
-                    // outline: 3px solid red;
-                    grid-area: catering;
-
-                    // display: flex;
-                    // width: 90%;
-                    // width: 526px;
-                    text-align: left;
-                    font: normal normal normal 82px/79px Blenda Script;
-                    letter-spacing: 0px;
-                    color: #f23816;
-                    color: #020100;
-                    opacity: 1;
-                    @include max-width-mixin(1200px) {
-                        font-size: 75px;
-                    }
-                    @include max-width-mixin(1100px) {
-                        font-size: 65px;
-                    }
-                    @include max-width-mixin(960px) {
-                        font-size: 55px;
-                    }
-                    @include max-width-mixin(820px) {
-                        font-size: 50px;
-                    }
-                    @include max-width-mixin(350px) {
-                        font-size: 40px;
-                    }
-                }
-
                 .hollis {
                     // outline: 3px solid red;
                     grid-area: hollis;
                     width: 100%;
                     align-self: end;
                     display: flex;
-                    align-self: flex-end;
+                    align-self: flex-start;
                     text-align: left;
                     font: normal normal normal 15px/41px "BioRhyme Expanded";
                     letter-spacing: 0px;
                     color: #020100;
                     opacity: 1;
-                    padding-top: 25px;
+                    padding-top: 15px;
                     @include max-width-mixin(900px) {
                         margin-bottom: 10px;
                         // width: 80%;
@@ -226,7 +360,7 @@ main {
                 justify-content: flex-end;
                 align-items: center;
                 padding-bottom: 10px;
-                margin-top: 80px;
+
                 @include max-width-mixin(1000px) {
                     margin-top: 40px;
                 }
@@ -236,9 +370,10 @@ main {
                 }
 
                 .delicious {
+                    // outline: 3px solid red;
                     grid-area: delicious;
 
-                    width: 80%;
+                    width: 100%;
                     display: flex;
                     text-align: center;
                     align-self: center;
@@ -254,14 +389,16 @@ main {
                         font-size: 16px;
                         // width: 80%;
                     }
-                    @include max-width-mixin(900px) {
-                        // justify-self: flex-start;
-                        // text-align: left;
-                        // line-height: 1.5;
+                    @include max-width-mixin(1000px) {
+                        font-size: 14px;
+                        width: 95%;
                     }
                     @include max-width-mixin(750px) {
                         align-self: flex-start;
                         text-align: left;
+                    }
+                    @include max-width-mixin(400px) {
+                        line-height: 1.4;
                     }
                 }
 
@@ -275,6 +412,9 @@ main {
                     color: #020100;
                     opacity: 1;
                     padding-top: 25px;
+                    position: relative;
+                    // top: 3px;
+
                     @include max-width-mixin(1000px) {
                         margin-top: 0; //15px;
                     }
@@ -297,11 +437,11 @@ main {
                     }
                 }
 
-                .price {
+                .price1 {
                     // outline: 3px solid red;
                     grid-area: price;
 
-                    width: 80%;
+                    width: 100%;
                     height: 100px;
                     @include min-width-mixin(900px) {
                         margin: 0 auto;
@@ -309,21 +449,23 @@ main {
                     margin-top: 10px;
                     position: relative;
                     align-items: center;
-                    // padding-top: 25px;
 
-                    display: flex;
+                    display: grid;
+                    grid-template-areas: "only dollars cents asteric pickup";
+
+                    justify-content: center;
+                    justify-self: center;
+
                     justify-content: center;
                     @include max-width-mixin(1000px) {
                         height: 80px;
                     }
                     @include max-width-mixin(750px) {
                         justify-content: flex-start;
-                        // margin-bottom: 0px;
-                        // margin-top: 0;
-                        // width: 80%;
                     }
 
                     .only {
+                        grid-area: only;
                         align-items: center;
                         text-align: left;
                         font: normal normal bold 63px/59px Times New Roman;
@@ -332,12 +474,16 @@ main {
                         color: #020100;
                         opacity: 1;
                         @include max-width-mixin(1150px) {
-                            font-size: 50px;
+                            font-size: 45px;
+                        }
+                        @include max-width-mixin(1000px) {
+                            font-size: 35px;
                         }
                         @include max-width-mixin(900px) {
                         }
                     }
                     .dollars {
+                        grid-area: dollars;
                         text-align: left;
                         font: normal normal bold 67px/57px Times New Roman;
                         letter-spacing: 0px;
@@ -345,10 +491,14 @@ main {
                         color: #020100;
                         opacity: 1;
                         @include max-width-mixin(1150px) {
-                            font-size: 50px;
+                            font-size: 45px;
+                        }
+                        @include max-width-mixin(1000px) {
+                            font-size: 35px;
                         }
                     }
                     .cents {
+                        grid-area: cents;
                         text-align: left;
                         font: normal normal bold 44px/61px Times New Roman;
                         letter-spacing: 0px;
@@ -357,14 +507,19 @@ main {
                         text-transform: lowercase;
                         opacity: 1;
                         position: relative;
-                        top: -12px;
+                        top: -10px;
                         left: -5px;
                         @include max-width-mixin(1150px) {
                             font-size: 30px;
-                            top: -14px;
+                            top: -8px;
+                            left: -2px;
+                        }
+                        @include max-width-mixin(1000px) {
+                            font-size: 20px;
                         }
                     }
                     .asteric {
+                        grid-area: asteric;
                         text-align: left;
                         font: normal normal bold 35px/62px Times New Roman;
                         letter-spacing: 0px;
@@ -377,7 +532,155 @@ main {
                         left: -5px;
                         @include max-width-mixin(1150px) {
                             font-size: 25px;
-                            top: -17px;
+                            top: -10px;
+                            left: -2px;
+                        }
+                    }
+
+                    .pickup {
+                        // outline: 3px solid red;
+                        grid-area: pickup;
+                        text-align: center;
+                        font: normal normal normal 20px/33px BioRhyme Expanded;
+                        letter-spacing: 0px;
+                        color: #000000;
+                        opacity: 1;
+                        position: relative;
+                        top: 15px;
+                        left: -30px;
+
+                        @include max-width-mixin(1190px) {
+                            font-size: 16px;
+                        }
+                        @include max-width-mixin(920px) {
+                            font-size: 12px;
+                            // top: 0;
+                            // left: 0;
+                            // line-height: 1;
+                            // text-align: left;
+                        }
+                        @include max-width-mixin(800px) {
+                            left: -30px;
+                            line-height: 1;
+                            text-align: left;
+                        }
+                        @include max-width-mixin(750px) {
+                            font-size: 12px;
+                            top: 15px;
+                            left: -30px;
+                        }
+                    }
+                }
+
+                .price {
+                    outline: 3px solid red;
+                    grid-area: price;
+
+                    width: 100%;
+                    height: 100px;
+                    @include min-width-mixin(900px) {
+                        margin: 0 auto;
+                    }
+                    margin-top: 10px;
+                    position: relative;
+                    align-items: center;
+
+                    display: flex;
+                    justify-content: center;
+                    @include max-width-mixin(1000px) {
+                        height: 80px;
+                    }
+                    @include max-width-mixin(750px) {
+                        justify-content: flex-start;
+                    }
+
+                    .price-block {
+                        outline: 3px solid red;
+                        // width: 100%;
+
+                        .only {
+                            align-items: center;
+                            text-align: left;
+                            font: normal normal bold 63px/59px Times New Roman;
+                            letter-spacing: 0px;
+                            color: #f23816;
+                            color: #020100;
+                            opacity: 1;
+                            @include max-width-mixin(1150px) {
+                                font-size: 50px;
+                            }
+                            @include max-width-mixin(900px) {
+                            }
+                        }
+                        .dollars {
+                            text-align: left;
+                            font: normal normal bold 67px/57px Times New Roman;
+                            letter-spacing: 0px;
+                            color: #f23816;
+                            color: #020100;
+                            opacity: 1;
+                            @include max-width-mixin(1150px) {
+                                font-size: 50px;
+                            }
+                        }
+                        .cents {
+                            text-align: left;
+                            font: normal normal bold 44px/61px Times New Roman;
+                            letter-spacing: 0px;
+                            color: #f23816;
+                            color: #020100;
+                            text-transform: lowercase;
+                            opacity: 1;
+                            position: relative;
+                            top: -16px;
+                            left: -5px;
+                            @include max-width-mixin(1150px) {
+                                font-size: 30px;
+                                top: -8px;
+                            }
+                        }
+                        .asteric {
+                            text-align: left;
+                            font: normal normal bold 35px/62px Times New Roman;
+                            letter-spacing: 0px;
+                            color: #f23816;
+                            color: #020100;
+                            text-transform: lowercase;
+                            opacity: 1;
+                            position: relative;
+                            top: -25px;
+                            left: -10px;
+                            @include max-width-mixin(1150px) {
+                                font-size: 25px;
+                                top: -10px;
+                            }
+                        }
+                    }
+                    .pickup-block {
+                        outline: 3px solid red;
+
+                        .pickup {
+                            text-align: center;
+                            font: normal normal normal 20px/33px BioRhyme Expanded;
+                            letter-spacing: 0px;
+                            color: #000000;
+                            opacity: 1;
+                            position: relative;
+                            top: 15px;
+                            left: -30px;
+
+                            @include max-width-mixin(1160px) {
+                                // color: red;
+                                top: 0;
+                                left: 0;
+                                display: block;
+                                line-height: 1;
+                                text-align: left;
+                                padding-left: 10px;
+                            }
+                            @include max-width-mixin(420px) {
+                                font-size: 14px;
+                            }
                         }
                     }
                 }
@@ -398,6 +701,10 @@ main {
                     @include max-width-mixin(1050px) {
                         margin-top: 10px;
                     }
+                    @include max-width-mixin(1000px) {
+                        font-size: 35px;
+                    }
+
                     // margin-bottom: 10px;
                     a {
                         text-decoration: none;
@@ -405,18 +712,19 @@ main {
                         color: #020100;
                     }
 
-                    @include max-width-mixin(1150px) {
-                        font-size: 43px;
-                        top: -10px;
-                    }
-                    @include max-width-mixin(750px) {
-                        width: 100%;
-                        justify-self: flex-start;
-                        // margin-bottom: 15px;
-                    }
+                    // @include max-width-mixin(1150px) {
+                    //     font-size: 43px;
+                    //     top: -10px;
+                    // }
+                    // @include max-width-mixin(750px) {
+                    //     width: 100%;
+                    //     justify-self: flex-start;
+                    //     // margin-bottom: 15px;
+                    // }
                 }
 
-                .pickup {
+                .delivery {
+                    // outline: 3px solid red;
                     grid-area: pickup;
 
                     width: 100%;
@@ -424,25 +732,25 @@ main {
                     justify-self: center;
                     align-items: center;
                     text-align: center;
-                    font: normal normal normal 18px/22px "BioRhyme Expanded";
+                    font: normal normal normal 18px/30px BioRhyme Expanded;
                     letter-spacing: 0px;
-                    color: #020100;
+                    color: #000000;
                     opacity: 1;
-                    line-height: 1.8;
-                    margin-bottom: 25px;
+                    // line-height: 1.5;
 
-                    @include max-width-mixin(1050px) {
-                        width: 80%;
+                    @include max-width-mixin(1150px) {
+                        // width: 80%;
                         font-size: 16px;
                     }
                     @include max-width-mixin(1000px) {
                         font-size: 16px;
                         line-height: 1.5;
                         margin-bottom: 10px;
+                        width: 95%;
                     }
                     @include max-width-mixin(750px) {
                         width: 80%;
-                        justify-self: flex-start;
+                        justify-self: center;
                         text-align: left;
                         // margin-bottom: 15px;
                         // line-height: 1.8;
@@ -472,6 +780,10 @@ main {
             // outline: 3px solid red;
             // height: 76px;
             width: 84%;
+            @include max-width-mixin(900px) {
+                width: 90%;
+            }
+
             text-align: left;
             font: normal normal normal 60px/60px cursive;
             letter-spacing: 0px;
@@ -479,21 +791,15 @@ main {
             text-transform: uppercase;
             opacity: 1;
             margin: 0 auto;
-            // margin-top: 124px;
-            // margin-bottom: 50px;
 
-            // width: 178px;
-            // height: 63px;
-            // text-align: left;
             margin: 0 auto;
-            // width: 100%;
             font: normal normal normal 62px/60px CHAWP;
             font-family: CHAWP, cursive;
             letter-spacing: 0.62px;
             color: #ffffff;
             text-transform: uppercase;
             opacity: 1;
-            // margin-top: 100px;
+
             display: flex;
             @include max-width-mixin(800px) {
                 flex-direction: column;
@@ -531,7 +837,7 @@ main {
             }
 
             .shredded-container {
-                outline: 3px solid red;
+                // outline: 3px solid red;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;
@@ -586,7 +892,7 @@ main {
 
                 @include max-width-mixin(500px) {
                     font-size: 25px;
-                    line-height: 0.8;
+                    // line-height: 0.8;
                 }
                 @include max-width-mixin(350px) {
                     font-size: 20px;
@@ -616,17 +922,26 @@ main {
                 color: #ffffff;
                 text-transform: uppercase;
                 opacity: 1;
-                padding-bottom: 10px;
+                // padding-bottom: 20px;
+                padding-top: 5px;
+                line-height: 1.1;
+
+                @include max-width-mixin(1100px) {
+                    font-size: 50px;
+                }
+                @include max-width-mixin(900px) {
+                    font-size: 45px;
+                }
                 @include max-width-mixin(700px) {
-                    font-size: 48px;
+                    font-size: 40px;
                     line-height: 1;
                 }
                 @include max-width-mixin(500px) {
-                    font-size: 32px;
+                    font-size: 30px;
                     line-height: 1;
                     padding-bottom: 0px;
                 }
-                @include max-width-mixin(350px) {
+                @include max-width-mixin(400px) {
                     font-size: 25px;
                 }
             }
@@ -635,18 +950,24 @@ main {
                 // outline: 3px solid red;
                 width: 100%; //950px;
                 text-align: left;
-                font: normal normal normal 43px/60px Itim;
+                font: normal normal normal 38px/60px Itim;
                 letter-spacing: 0px;
                 color: #ffffff;
-                text-transform: lowercase;
+                // text-transform: lowercase;
                 opacity: 1;
                 line-height: 1;
-                @include max-width-mixin(700px) {
+
+                @include max-width-mixin(1100px) {
                     font-size: 30px;
+                }
+                @include max-width-mixin(900px) {
+                }
+                @include max-width-mixin(700px) {
+                    font-size: 24px;
                     line-height: 0.9;
                 }
                 @include max-width-mixin(350px) {
-                    font-size: 20px;
+                    font-size: 16px;
                 }
             }
 
@@ -673,6 +994,10 @@ main {
         // outline: 3px solid red;
         margin: 0 auto;
         width: 90%;
+        @include max-width-mixin(450px) {
+            width: 95%;
+            line-height: 1.5;
+        }
         text-align: center;
         font: normal normal normal 20px/32px BioRhyme Expanded;
         letter-spacing: 0px;
@@ -695,6 +1020,10 @@ main {
         // outline: 3px solid red;
         margin: 0 auto;
         width: 80%;
+        @include max-width-mixin(450px) {
+            width: 95%;
+            line-height: 1.5;
+        }
         text-align: center;
         font: normal normal normal 16px/28px BioRhyme Expanded;
         letter-spacing: 0px;

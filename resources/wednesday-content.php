@@ -1,1 +1,1 @@
-with lettuce, tomato, pickled onion, cheddar & mayo
+A hearty entree to see you through Hump Day. Grilled pineapple, roll, and choice of Gatorade or iced tea.

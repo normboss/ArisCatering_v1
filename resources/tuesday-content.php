@@ -1,1 +1,1 @@
-On a flour tortilla, topped with cilantro & onion
+On a flour tortilla, topped with cilantro and onion. Orange, tortilla chips, and choice of Gatorade or lemonade.

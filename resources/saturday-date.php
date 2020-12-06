@@ -1,1 +1,1 @@
-Saturaday, Oct 24
+Saturday, Oct 24

@@ -1,1 +1,1 @@
-Our Special Quiche of the Day
+our special quiche

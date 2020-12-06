@@ -308,20 +308,8 @@ main {
         padding-top: 30px;
 
         .menu-header {
-            outline: 3px solid red;
-            // height: 76px;
-            text-align: left;
-            font: normal normal normal 60px/60px cursive;
-            letter-spacing: 0px;
-            color: #ffffff;
-            text-transform: uppercase;
-            opacity: 1;
-            margin: 0 auto;
-            // margin-top: 124px;
-            // margin-bottom: 50px;
-
-            // width: 178px;
-            // height: 63px;
+            // outline: 3px solid red;
+            // margin: 0 auto;            
             text-align: left;
             width: 80%;
             font: normal normal normal 60px/60px CHAWP;
@@ -330,23 +318,21 @@ main {
             color: #ffffff;
             text-transform: uppercase;
             opacity: 1;
+            padding-left: 30px;
 
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
             align-items: flex-start;
             position: relative;
-            // margin-left: 150px;
 
-            p {
-                // display: flex;
-                // align-items: flex-end;
+            @include max-width-mixin(600px) {
+                font-size: 45px;
             }
 
             .upload-image {
                 outline: 5px dashed red;
-                width: 80%;
-                // height: 200px;
+                width: 84%;
                 text-align: left;
                 font: normal normal normal 43px/60px Itim;
                 letter-spacing: 0px;
@@ -378,7 +364,8 @@ main {
                 letter-spacing: 0px;
                 color: #ffffff;
                 text-transform: lowercase;
-                opacity: 1;                font-size: 30px;
+                opacity: 1;
+                font-size: 30px;
                 input {
                     height: 20px;
                     width: 20px;
@@ -389,9 +376,9 @@ main {
         }
 
         .menu-item {
-            outline: 3px solid red;
-            margin: 0 auto;
-            text-align: center;
+            // outline: 3px solid red;
+            // margin: 0 auto;
+            text-align: left;
             margin-bottom: 50px;
             // margin-left: 12%; // 146px;
             width: 80%;
@@ -401,16 +388,16 @@ main {
 
             .day-header {
                 // outline: 3px solid blue;
-                text-align: left;
-                font: normal normal normal 43px/60px Itim;
-                letter-spacing: 0px;
-                color: #ffffff;
-                // text-transform: lowercase;
-                opacity: 1;
+                // text-align: left;
+                // font: normal normal normal 43px/60px Itim;
+                // letter-spacing: 0px;
+                // color: #ffffff;
+                // // text-transform: lowercase;
+                // opacity: 1;
 
-                // display: flex;
-                justify-content: flex-start;
-                align-items: flex-start;
+                // // display: flex;
+                // justify-content: flex-start;
+                // align-items: flex-start;
 
                 textarea {
                     outline: 5px dashed red;
@@ -427,6 +414,8 @@ main {
                     max-width: 80%;
                     width: 100%;
                     height: 60px;
+                    margin-left: 30px;
+
 
                     @include max-width-mixin(900px) {
                         width: 90%;
@@ -439,21 +428,21 @@ main {
 
             .meal-summary {
                 // outline: 3px solid red;
-                margin-top: 5px;
-                text-align: left;
-                font: normal normal normal 62px/60px CHAWP;
-                letter-spacing: 0.62px;
-                color: #ffffff;
-                text-transform: uppercase;
-                opacity: 1;
-                padding-bottom: 10px;
-                @include max-width-mixin(700px) {
-                    font-size: 45px;
-                }
-                @include max-width-mixin(500px) {
-                    font-size: 30px;
-                    line-height: 1.5;
-                }
+                // margin-top: 5px;
+                // text-align: left;
+                // font: normal normal normal 62px/60px CHAWP;
+                // letter-spacing: 0.62px;
+                // color: #ffffff;
+                // text-transform: uppercase;
+                // opacity: 1;
+                // padding-bottom: 10px;
+                // @include max-width-mixin(700px) {
+                //     font-size: 45px;
+                // }
+                // @include max-width-mixin(500px) {
+                //     font-size: 30px;
+                //     line-height: 1.5;
+                // }
 
                 textarea {
                     outline: 5px dashed red;
@@ -469,38 +458,46 @@ main {
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: center;
+                    margin-left: 30px;
+
                     @include max-width-mixin(900px) {
                         width: 90%;
                     }
+                    @include max-width-mixin(600px) {
+                        font-size: 45px;
+                    }
                     @include max-width-mixin(500px) {
                         width: 95%;
+                        font-size: 32px;
+                        line-height: 1.3;
                     }
                 }
             }
 
             .meal-content {
                 // outline: 3px solid red;
-                width: 100%; //950px;
-                text-align: left;
-                font: normal normal normal 43px/60px Itim;
-                letter-spacing: 0px;
-                color: #ffffff;
-                text-transform: lowercase;
-                opacity: 1;
-                line-height: 1;
-                @include max-width-mixin(700px) {
-                    font-size: 30px;
-                }
+                // width: 100%; //950px;
+                // text-align: left;
+                // font: normal normal normal 43px/60px Itim;
+                // letter-spacing: 0px;
+                // color: #ffffff;
+                // // text-transform: lowercase;
+                // opacity: 1;
+                // line-height: 1;
+                // @include max-width-mixin(700px) {
+                //     font-size: 30px;
+                // }
 
                 textarea {
                     outline: 5px dashed red;
                     width: 80%;
+                    margin-left: 30px;
                     height: 200px;
                     text-align: left;
                     font: normal normal normal 43px/60px Itim;
                     letter-spacing: 0px;
                     color: #ffffff;
-                    text-transform: lowercase;
+                    // text-transform: lowercase;
                     opacity: 1;
                     // font-family: "BioRhyme Expanded", serif;
                     background-image: url("../images/blackboard2-cropped.png");
@@ -512,6 +509,8 @@ main {
                     }
                     @include max-width-mixin(500px) {
                         width: 95%;
+                        font-size: 28px;
+                        line-height: 1.2;
                     }
                 }
             }

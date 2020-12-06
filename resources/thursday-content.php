@@ -1,1 +1,1 @@
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum amet quis ut ad, 
+With caramelized onion, bell pepper and cheddar. Apple, cake, and choice of green tea or iced coffee.

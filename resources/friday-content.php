@@ -1,1 +1,1 @@
-On a fresh croissant with lettuce, tomato & onion
+On a fresh croissant with lettuce, tomato and onion. Orange, coleslaw, and choice of Gatorade or Chai tea.
