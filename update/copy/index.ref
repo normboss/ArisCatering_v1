@@ -28,41 +28,41 @@
 
                 <div class="left-side">
 
-                    <div class="cookin-and-logo1">
-                        <div class="box1 cookin">
+                    <div class="box cookin-and-logo1">
+                        <div class="box cookin">
                             <div class="cookin1">
                                 See
                             </div>
-                            <div class="cookin1">
+                            <div class="box cookin1">
                                 What’s
                             </div>
-                            <div class="cookin1">
+                            <div class="box cookin1">
                                 Cookin’
                             </div>
-                            <div class="cookin1">
+                            <div class="box cookin1">
                                 at
                             </div>
                         </div>
                         <img class="box1 logo" src="../../images/chef_black_whte_trans1.png">
                         <div class="blank">
                         </div>
-                        <div class="box1 catering">
+                        <div class="box catering">
                             Ari's Catering!
                         </div>
                     </div>
 
                     <div class="box take-out">
-                        Take-Out Service
+                    Take-out service for&nbsp;the&nbsp;Hollis,&nbsp;NH&nbsp;area
                     </div>
 
-                    <div class="box hollis">
-                        Serving the Hollis,&nbsp;NH&nbsp;area
-                    </div>
+                    <!-- <div class="box hollis">
+                        for the Hollis,&nbsp;NH&nbsp;area
+                    </div> -->
                 </div>
 
                 <div class="right-side">
                     <div class="box delicious">
-                        Delicious daily entrees with fruit,&nbsp;snack & drink
+                        Delicious daily entrees with fruit,&nbsp;snack&nbsp;&&nbsp;drink
                     </div>
 
                     <div class="box price1">
@@ -76,8 +76,7 @@
                     </div>
 
                     <div class="box delivery">
-                        <!-- Add $5 for delivery, or get free delivery for 3 or more same&#8209;day&nbsp;orders -->
-                        *Add $5 for delivery, or free delivery for 3+ same&#8209;day orders to same&nbsp;address
+                        *Add $5 for delivery, or free delivery&nbsp;for 3+ same&#8209;day orders to&nbsp;same&nbsp;address
                     </div>
 
                     <div class="box phone-number">

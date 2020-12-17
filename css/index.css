@@ -60,6 +60,7 @@ main nav ul li {
   text-align: left;
   font: normal normal normal 14px/49px Arial;
   letter-spacing: 0px;
+  line-height: 1.2;
   color: #000000;
   opacity: 1;
 }
@@ -108,7 +109,7 @@ main .top-section header .left-side {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-top: 41px;
+  margin-top: 25px;
   padding-left: 0;
   margin-left: 0;
 }
@@ -247,10 +248,16 @@ main .top-section header .left-side .cookin-and-logo1 .catering {
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1000px) {
   main .top-section header .left-side .cookin-and-logo1 .catering {
     font-size: 60px;
     top: -20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .top-section header .left-side .cookin-and-logo1 .catering {
+    font-size: 55px;
   }
 }
 
@@ -364,16 +371,21 @@ main .top-section header .left-side .cookin-and-logo .logo {
 
 main .top-section header .left-side .take-out {
   grid-area: delicious;
-  width: 100%;
+  width: 80%;
   display: flex;
-  text-align: center;
-  align-self: center;
-  justify-self: center;
+  text-align: left;
+  align-self: flex-start;
+  justify-self: flex-start;
   font: normal normal bold 24px "BioRhyme Expanded";
   letter-spacing: 0px;
   color: #020100;
   opacity: 1;
   line-height: 1.2;
+  text-align: left;
+  font: normal normal normal 15px/22px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
 }
 
 @media screen and (max-width: 1150px) {
@@ -384,7 +396,7 @@ main .top-section header .left-side .take-out {
 
 @media screen and (max-width: 1000px) {
   main .top-section header .left-side .take-out {
-    width: 95%;
+    width: 75%;
   }
 }
 
@@ -392,6 +404,7 @@ main .top-section header .left-side .take-out {
   main .top-section header .left-side .take-out {
     justify-content: center;
     text-align: center;
+    width: 100%;
   }
 }
 
@@ -437,13 +450,6 @@ main .top-section header .right-side {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  padding-bottom: 10px;
-}
-
-@media screen and (max-width: 1000px) {
-  main .top-section header .right-side {
-    margin-top: 40px;
-  }
 }
 
 @media screen and (max-width: 750px) {
@@ -464,6 +470,11 @@ main .top-section header .right-side .delicious {
   color: #020100;
   opacity: 1;
   line-height: 1.8;
+  text-align: center;
+  font: normal normal normal 20px/33px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
 }
 
 @media screen and (max-width: 1150px) {
@@ -475,49 +486,19 @@ main .top-section header .right-side .delicious {
 @media screen and (max-width: 1000px) {
   main .top-section header .right-side .delicious {
     font-size: 14px;
-    width: 95%;
+    line-height: 1.7;
   }
 }
 
 @media screen and (max-width: 750px) {
   main .top-section header .right-side .delicious {
-    text-align: left;
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 400px) {
   main .top-section header .right-side .delicious {
     line-height: 1.4;
-  }
-}
-
-main .top-section header .right-side .orders {
-  width: 100%;
-  margin-top: -10px;
-  text-align: center;
-  font: normal normal normal 15px/22px BioRhyme Expanded;
-  letter-spacing: 0px;
-  color: #020100;
-  opacity: 1;
-  padding-top: 25px;
-  position: relative;
-}
-
-@media screen and (max-width: 1000px) {
-  main .top-section header .right-side .orders {
-    margin-top: 0;
-  }
-}
-
-@media screen and (max-width: 1150px) {
-  main .top-section header .right-side .orders {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  main .top-section header .right-side .orders {
-    width: 100%;
   }
 }
 
@@ -817,17 +798,20 @@ main .top-section header .right-side .phone-number {
   color: #020100;
   opacity: 1;
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1100px) {
   main .top-section header .right-side .phone-number {
     margin-top: 10px;
+    margin-bottom: 0px;
   }
 }
 
 @media screen and (max-width: 1000px) {
   main .top-section header .right-side .phone-number {
     font-size: 35px;
+    margin-bottom: 0;
   }
 }
 
@@ -845,6 +829,11 @@ main .top-section header .right-side .delivery {
   align-items: center;
   text-align: center;
   font: normal normal normal 18px/30px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  text-align: center;
+  font: normal normal normal 17px/30px BioRhyme Expanded;
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
@@ -868,7 +857,37 @@ main .top-section header .right-side .delivery {
 @media screen and (max-width: 750px) {
   main .top-section header .right-side .delivery {
     justify-self: center;
-    text-align: left;
+    text-align: center;
+  }
+}
+
+main .top-section header .right-side .orders {
+  width: 100%;
+  text-align: center;
+  font: normal normal normal 15px/22px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #020100;
+  opacity: 1;
+  padding-top: 25px;
+  position: relative;
+}
+
+@media screen and (max-width: 1100px) {
+  main .top-section header .right-side .orders {
+    margin-top: 0;
+    padding-top: 15px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section header .right-side .orders {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  main .top-section header .right-side .orders {
+    width: 100%;
   }
 }
 
@@ -1235,12 +1254,5 @@ main .menu-section .menu-item .meal-content {
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
-}
-
-.alchemy img {
-  background: #ffffff 0% 0% no-repeat padding-box;
-  opacity: 1;
-  height: 18px;
-  width: 18px;
 }
 /*# sourceMappingURL=index.css.map */

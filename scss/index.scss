@@ -40,12 +40,12 @@ main {
                 text-align: left;
                 font: normal normal normal 14px/49px Arial;
                 letter-spacing: 0px;
+                line-height: 1.2;
                 color: #000000;
                 opacity: 1;
-        
+
                 a {
                     text-decoration: none;
-                    
                 }
             }
         }
@@ -60,6 +60,7 @@ main {
         // min-width: 900px;
         margin-top: 0;
         height: auto; //500px;
+        // height: 500px;
         padding-bottom: 25px;
         // width: 1280px;
         // padding-left: 100px;
@@ -103,7 +104,7 @@ main {
                 @include max-width-mixin(750px) {
                     justify-content: center;
                 }
-                margin-top: 41px;
+                margin-top: 25px; //41px;
                 @include max-width-mixin(350px) {
                     padding-left: 10px;
                 }
@@ -231,9 +232,13 @@ main {
                             font-size: 65px;
                             top: -17px;
                         }
-                        @include max-width-mixin(960px) {
+                        @include max-width-mixin(1000px) {
                             font-size: 60px;
                             top: -20px;
+                        }
+                        @include max-width-mixin(1000px) {
+                            font-size: 55px;
+                            // top: -20px;
                         }
                         @include max-width-mixin(825px) {
                             font-size: 55px;
@@ -347,17 +352,22 @@ main {
                     // outline: 3px solid red;
                     grid-area: delicious;
 
-                    width: 100%;
+                    width: 80%;
                     display: flex;
-                    text-align: center;
-                    align-self: center;
-                    justify-self: center;
+                    text-align: left;
+                    align-self: flex-start;
+                    justify-self: flex-start;
                     font: normal normal bold 24px "BioRhyme Expanded";
                     letter-spacing: 0px;
                     color: #020100;
                     opacity: 1;
                     line-height: 1.2;
                     // margin-top: 50px;
+                    text-align: left;
+                    font: normal normal normal 15px/22px BioRhyme Expanded;
+                    letter-spacing: 0px;
+                    color: #000000;
+                    opacity: 1;
 
                     @include max-width-mixin(1150px) {
                         font-size: 16px;
@@ -365,11 +375,12 @@ main {
                     }
                     @include max-width-mixin(1000px) {
                         // font-size: 14px;
-                        width: 95%;
+                        width: 75%;
                     }
                     @include max-width-mixin(750px) {
                         justify-content: center;
-                        text-align: center
+                        text-align: center;
+                        width: 100%;
                     }
                     @include max-width-mixin(400px) {
                         line-height: 1.4;
@@ -414,10 +425,10 @@ main {
                 flex-direction: column;
                 justify-content: flex-end;
                 align-items: center;
-                padding-bottom: 10px;
+                // padding-bottom: 10px;
 
                 @include max-width-mixin(1000px) {
-                    margin-top: 40px;
+                    // margin-top: 40px;
                 }
                 @include max-width-mixin(750px) {
                     margin-top: 20px;
@@ -440,55 +451,27 @@ main {
                     line-height: 1.8;
                     // margin-top: 50px;
 
+                    text-align: center;
+                    font: normal normal normal 20px/33px BioRhyme Expanded;
+                    letter-spacing: 0px;
+                    color: #000000;
+                    opacity: 1;
+
                     @include max-width-mixin(1150px) {
                         font-size: 16px;
                         // width: 80%;
                     }
                     @include max-width-mixin(1000px) {
                         font-size: 14px;
-                        width: 95%;
+                        // width: 95%;
+                        line-height: 1.7;
                     }
                     @include max-width-mixin(750px) {
                         // align-self: flex-start;
-                        text-align: left;
+                        text-align: center;
                     }
                     @include max-width-mixin(400px) {
                         line-height: 1.4;
-                    }
-                }
-
-                .orders {
-                    // outline: 3px solid red;
-                    width: 100%;
-                    margin-top: -10px;
-                    text-align: center;
-                    font: normal normal normal 15px/22px BioRhyme Expanded;
-                    letter-spacing: 0px;
-                    color: #020100;
-                    opacity: 1;
-                    padding-top: 25px;
-                    position: relative;
-                    // top: 3px;
-
-                    @include max-width-mixin(1000px) {
-                        margin-top: 0; //15px;
-                    }
-
-                    @include max-width-mixin(1150px) {
-                        font-size: 14px;
-                    }
-                    @include max-width-mixin(900px) {
-                        // justify-self: flex-start;
-                        // text-align: left;
-                        // padding-top: 10px;
-                    }
-                    @include max-width-mixin(750px) {
-                        // align-self: flex-start;
-                        // text-align: left;
-                        width: 100%;
-                    }
-                    @include max-width-mixin(400px) {
-                        // width: 80%;
                     }
                 }
 
@@ -761,11 +744,15 @@ main {
                     color: #020100;
                     opacity: 1;
                     margin-top: 20px;
-                    @include max-width-mixin(1050px) {
+                    margin-bottom: 10px;
+
+                    @include max-width-mixin(1100px) {
                         margin-top: 10px;
+                        margin-bottom: 0px;
                     }
                     @include max-width-mixin(1000px) {
                         font-size: 35px;
+                        margin-bottom: 0;
                     }
 
                     // margin-bottom: 10px;
@@ -801,6 +788,12 @@ main {
                     opacity: 1;
                     // line-height: 1.5;
 
+                    text-align: center;
+                    font: normal normal normal 17px/30px BioRhyme Expanded;
+                    letter-spacing: 0px;
+                    color: #000000;
+                    opacity: 1;
+
                     @include max-width-mixin(1150px) {
                         // width: 80%;
                         font-size: 16px;
@@ -814,9 +807,44 @@ main {
                     @include max-width-mixin(750px) {
                         // width: 80%;
                         justify-self: center;
-                        text-align: left;
+                        text-align: center;
                         // margin-bottom: 15px;
                         // line-height: 1.8;
+                    }
+                }
+
+                .orders {
+                    // outline: 3px solid red;
+                    width: 100%;
+                    // margin-top: -20px;
+                    text-align: center;
+                    font: normal normal normal 15px/22px BioRhyme Expanded;
+                    letter-spacing: 0px;
+                    color: #020100;
+                    opacity: 1;
+                    padding-top: 25px;
+                    position: relative;
+                    // top: 3px;
+
+                    @include max-width-mixin(1100px) {
+                        margin-top: 0; //15px;
+                        padding-top: 15px;
+                    }
+                    @include max-width-mixin(1150px) {
+                        font-size: 14px;
+                    }
+                    @include max-width-mixin(900px) {
+                        // justify-self: flex-start;
+                        // text-align: left;
+                        // padding-top: 10px;
+                    }
+                    @include max-width-mixin(750px) {
+                        // align-self: flex-start;
+                        // text-align: left;
+                        width: 100%;
+                    }
+                    @include max-width-mixin(400px) {
+                        // width: 80%;
                     }
                 }
             }
@@ -1171,10 +1199,10 @@ main {
         color: #000000;
         opacity: 1;
     }
-    img {
-        background: #ffffff 0% 0% no-repeat padding-box;
-        opacity: 1;
-        height: 18px;
-        width: 18px;
-    }
+    // img {
+    //     background: #ffffff 0% 0% no-repeat padding-box;
+    //     opacity: 1;
+    //     height: 18px;
+    //     width: 18px;
+    // }
 }

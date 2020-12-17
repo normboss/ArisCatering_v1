@@ -211,6 +211,7 @@ main .top-section .left-part .catering {
 }
 
 main .top-section .left-part .take-out {
+  outline: 3px solid red;
   grid-area: delicious;
   width: 100%;
   display: flex;
