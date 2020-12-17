@@ -1,1 +1,1 @@
-image2.JPG
+../images/resizedImagehdofme2hmt.jpg

@@ -1,1 +1,1 @@
-Wednesday, Oct 21
+Wed Oct 21

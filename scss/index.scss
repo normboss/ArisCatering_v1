@@ -23,9 +23,13 @@ main {
         margin-top: 0;
         height: auto; //500px;
         // padding-bottom: 25px;
-        margin-bottom: 2px;
+        // margin-bottom: 2px;
         display: flex;
         justify-content: flex-end;
+        font: normal normal normal 12px/35px "BioRhyme Expanded";
+        letter-spacing: 0px;
+        color: #020100;
+
         ul {
             // outline: 3px solid red;
             display: flex;
@@ -33,6 +37,16 @@ main {
             list-style: none;
             li {
                 padding-right: 29px;
+                text-align: left;
+                font: normal normal normal 14px/49px Arial;
+                letter-spacing: 0px;
+                color: #000000;
+                opacity: 1;
+        
+                a {
+                    text-decoration: none;
+                    
+                }
             }
         }
     }
@@ -86,6 +100,9 @@ main {
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: flex-start;
+                @include max-width-mixin(750px) {
+                    justify-content: center;
+                }
                 margin-top: 41px;
                 @include max-width-mixin(350px) {
                     padding-left: 10px;
@@ -150,7 +167,6 @@ main {
                                 line-height: 1;
                             }
                             padding-bottom: 5px;
-
                         }
                         @include max-width-mixin(600px) {
                             font-size: 45px;
@@ -199,7 +215,7 @@ main {
                         // width: 90%;
                         // width: 526px;
                         text-align: left;
-                        font: normal normal normal 82px/79px Blenda Script;
+                        font: normal normal normal 82px Blenda Script;
                         letter-spacing: 0px;
                         color: #f23816;
                         color: #020100;
@@ -223,11 +239,13 @@ main {
                             font-size: 55px;
                         }
                         @include max-width-mixin(800px) {
+                            padding-top: 15px;
                             font-size: 50px;
                         }
                         @include max-width-mixin(750px) {
                             font-size: 80px;
-                            padding-top: 15px;
+                            // padding-top: 15px;
+                            top: -30px;
                         }
                         @include max-width-mixin(600px) {
                             font-size: 70px;
@@ -236,9 +254,11 @@ main {
                         @include max-width-mixin(500px) {
                             font-size: 60px;
                             // padding-top: 15px;
+                            margin-top: 20px;
+                            line-height: 0.9;
                         }
                         @include max-width-mixin(350px) {
-                            // font-size: 40px;
+                            font-size: 40px;
                         }
                     }
                 }
@@ -323,6 +343,39 @@ main {
                     // align-self: flex-end;
                 }
 
+                .take-out {
+                    // outline: 3px solid red;
+                    grid-area: delicious;
+
+                    width: 100%;
+                    display: flex;
+                    text-align: center;
+                    align-self: center;
+                    justify-self: center;
+                    font: normal normal bold 24px "BioRhyme Expanded";
+                    letter-spacing: 0px;
+                    color: #020100;
+                    opacity: 1;
+                    line-height: 1.2;
+                    // margin-top: 50px;
+
+                    @include max-width-mixin(1150px) {
+                        font-size: 16px;
+                        // width: 80%;
+                    }
+                    @include max-width-mixin(1000px) {
+                        // font-size: 14px;
+                        width: 95%;
+                    }
+                    @include max-width-mixin(750px) {
+                        justify-content: center;
+                        text-align: center
+                    }
+                    @include max-width-mixin(400px) {
+                        line-height: 1.4;
+                    }
+                }
+
                 .hollis {
                     // outline: 3px solid red;
                     grid-area: hollis;
@@ -345,6 +398,8 @@ main {
                     @include max-width-mixin(750px) {
                         margin-bottom: 0;
                         padding-top: 10px;
+                        text-align: center;
+                        justify-content: center;
                     }
                 }
                 padding-left: 0;
@@ -366,7 +421,7 @@ main {
                 }
                 @include max-width-mixin(750px) {
                     margin-top: 20px;
-                    align-items: flex-start;
+                    // align-items: flex-start;
                 }
 
                 .delicious {
@@ -394,7 +449,7 @@ main {
                         width: 95%;
                     }
                     @include max-width-mixin(750px) {
-                        align-self: flex-start;
+                        // align-self: flex-start;
                         text-align: left;
                     }
                     @include max-width-mixin(400px) {
@@ -428,8 +483,8 @@ main {
                         // padding-top: 10px;
                     }
                     @include max-width-mixin(750px) {
-                        align-self: flex-start;
-                        text-align: left;
+                        // align-self: flex-start;
+                        // text-align: left;
                         width: 100%;
                     }
                     @include max-width-mixin(400px) {
@@ -461,7 +516,7 @@ main {
                         height: 80px;
                     }
                     @include max-width-mixin(750px) {
-                        justify-content: flex-start;
+                        // justify-content: flex-start;
                     }
 
                     .only {
@@ -547,27 +602,34 @@ main {
                         opacity: 1;
                         position: relative;
                         top: 15px;
-                        left: -30px;
+                        // left: -15px;
 
                         @include max-width-mixin(1190px) {
+                            left: 0px;
                             font-size: 16px;
                         }
+                        @include max-width-mixin(1150px) {
+                            top: 10px;
+                        }
+                        @include max-width-mixin(1150px) {
+                            top: 8px;
+                        }
                         @include max-width-mixin(920px) {
-                            font-size: 12px;
+                            // font-size: 12px;
                             // top: 0;
                             // left: 0;
                             // line-height: 1;
                             // text-align: left;
                         }
                         @include max-width-mixin(800px) {
-                            left: -30px;
-                            line-height: 1;
-                            text-align: left;
+                            // left: -30px;
+                            // line-height: 1;
+                            // text-align: left;
                         }
                         @include max-width-mixin(750px) {
-                            font-size: 12px;
-                            top: 15px;
-                            left: -30px;
+                            // font-size: 12px;
+                            // top: 15px;
+                            // left: -30px;
                         }
                     }
                 }
@@ -656,33 +718,34 @@ main {
                             }
                         }
                     }
-                    .pickup-block {
+                    // .pickup-block {
+                    //     outline: 3px solid red;
+
+                    .pickup2 {
                         outline: 3px solid red;
+                        text-align: center;
+                        font: normal normal normal 20px/33px BioRhyme Expanded;
+                        letter-spacing: 0px;
+                        color: #000000;
+                        opacity: 1;
+                        position: relative;
+                        top: 15px;
+                        left: -30px;
 
-                        .pickup {
-                            text-align: center;
-                            font: normal normal normal 20px/33px BioRhyme Expanded;
-                            letter-spacing: 0px;
-                            color: #000000;
-                            opacity: 1;
-                            position: relative;
-                            top: 15px;
-                            left: -30px;
-
-                            @include max-width-mixin(1160px) {
-                                // color: red;
-                                top: 0;
-                                left: 0;
-                                display: block;
-                                line-height: 1;
-                                text-align: left;
-                                padding-left: 10px;
-                            }
-                            @include max-width-mixin(420px) {
-                                font-size: 14px;
-                            }
+                        @include max-width-mixin(1160px) {
+                            // color: red;
+                            top: 0;
+                            left: 0;
+                            display: block;
+                            line-height: 1;
+                            text-align: left;
+                            padding-left: 10px;
+                        }
+                        @include max-width-mixin(420px) {
+                            font-size: 14px;
                         }
                     }
+                    // }
                 }
 
                 .phone-number {
@@ -749,7 +812,7 @@ main {
                         width: 95%;
                     }
                     @include max-width-mixin(750px) {
-                        width: 80%;
+                        // width: 80%;
                         justify-self: center;
                         text-align: left;
                         // margin-bottom: 15px;
@@ -775,6 +838,14 @@ main {
         align-items: center;
         padding-bottom: 100px;
         padding-top: 30px;
+
+        button {
+            height: 30px;
+            position: relative;
+            top: -23px;
+            left: 15px;
+            color: red;
+        }
 
         .menu-header {
             // outline: 3px solid red;
@@ -1046,70 +1117,64 @@ main {
         margin-top: 40px;
         display: flex;
         justify-content: center;
-        @include max-width-mixin(800px) {
-            flex-direction: column;
-            align-items: center;
-            margin: 0 auto;
-            width: 100%;
-            margin-top: 15px;
-        }
 
-        .footer-phone-number {
-            // outline: 3px solid red;
+        a {
+            color: #000000;
+            text-decoration: none;
             text-align: center;
             font: normal normal bold 54px/49px Times New Roman;
             letter-spacing: 0px;
             color: #000000;
             opacity: 1;
-            text-decoration: none;
-            @include max-width-mixin(1000px) {
-                font-size: 40px;
-            }
-            @include max-width-mixin(800px) {
-                width: 100%;
-                padding: 0;
-                margin: 0 auto;
-                // width: 50%;
-                align-self: center;
-            }
         }
-        .footer-images {
-            display: flex;
-            flex-direction: row;
-            img {
-                padding-left: 20px;
-                @include max-width-mixin(800px) {
-                    padding: 0;
-                    margin: 0 auto;
-                    margin-top: 20px;
-                    width: 45%;
-                }
-            }
+        @include max-width-mixin(1000px) {
+            font-size: 40px;
+        }
+        @include max-width-mixin(800px) {
+            width: 100%;
+            padding: 0;
+            margin: 0 auto;
+            // width: 50%;
+            align-self: center;
         }
     }
 
-    .alchemy {
-        // outline: 3px solid red;
-        margin: 0 auto;
-        width: 95%;
-        height: 20px;
+    .footer-images {
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        margin-top: 30px;
-
-        p {
-            text-align: left;
-            font: normal normal normal 14px/49px Arial;
-            letter-spacing: 0px;
-            color: #000000;
-            opacity: 1;
-        }
+        flex-direction: row;
         img {
-            background: #ffffff 0% 0% no-repeat padding-box;
-            opacity: 1;
-            height: 18px;
-            width: 18px;
+            padding-left: 20px;
+            @include max-width-mixin(800px) {
+                padding: 0;
+                margin: 0 auto;
+                margin-top: 20px;
+                width: 45%;
+            }
         }
+    }
+}
+
+.alchemy {
+    // outline: 3px solid red;
+    margin: 0 auto;
+    width: 95%;
+    height: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+
+    p {
+        text-align: left;
+        font: normal normal normal 14px/49px Arial;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+    }
+    img {
+        background: #ffffff 0% 0% no-repeat padding-box;
+        opacity: 1;
+        height: 18px;
+        width: 18px;
     }
 }

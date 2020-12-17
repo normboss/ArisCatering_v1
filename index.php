@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ari's Catering'</title>
+    <title>Lunch Take-out and Delivery | Ari's Catering</title>
+    <meta name="description" content="Lunch Take-out and Delivery in the Hollis NH area. Daily entrees with fruit, snack and drink.">
 
     <link href="./css/index.css" media="screen" rel="stylesheet" type="text/css">
 
@@ -14,14 +15,14 @@
 <body>
     <main>
 
-        <!-- <nav>
+        <nav>
             <ul>
-                <li>HOME</li>
-                <li>ABOUT</li>
+                <li><a href="/ariscatering_v1/index.php">Home</a></li>
+                <li>About</li>
+                <li><a href="./update/index.php">Update</a></li>
             </ul>
-        </nav> -->
+        </nav>
         <div class="top-section">
-
             <header>
 
                 <div class="left-side">
@@ -49,6 +50,9 @@
                         </div>
                     </div>
 
+                    <div class="box take-out">
+                        Take-Out Service
+                    </div>
 
                     <div class="box hollis">
                         Serving the Hollis,&nbsp;NH&nbsp;area
@@ -63,11 +67,11 @@
                     <div class="box price1">
                         <span class="only">Only&nbsp;</span>
                         <span class="dollars">$12</span>
-                        <span class="cents">99</span>
+                        <!-- <span class="cents">99</span> -->
                         <span class="asteric">*</span>
-                        <div class="pickup">
-                        Picked up
-                        </div>
+                        <span class="pickup">
+                            Picked up
+                        </span>
                     </div>
 
                     <div class="box delivery">
@@ -87,22 +91,13 @@
         </div>
 
         <div class="menu-section">
+            <!-- <button onclick="doUpdate()">Update Menu</button> -->
 
             <div class="menu-header">
                 <p>MENU:</p>
-                <img src="./images/resizedImage.jpg" alt="">
-                <!-- <img src="./images/
-                    <?php // require './resources/image-name.php' 
-                    ?>" alt=""> 
-                -->
-                <!-- <div class="shredded-container">
-                    <div class="shredded">
-                        Our Shredded
-                    </div>
-                    <div class="shredded">
-                        Beef Taco
-                    </div>
-                </div> -->
+                <!-- <img src="./images/resizedImage.jpg" alt=""> -->
+                <img src="./images/<?php require './resources/image-name.php' ?>" alt="">
+
             </div>
 
             <div class="menu-item">
@@ -189,19 +184,19 @@
             Everything prepared in a kitchen where dairy, gluten, eggs, peanuts and&nbsp;other allergens&nbsp;are&nbsp;used.
         </p>
         <div class="phone-etc">
-            <div class="footer-phone-number"> 802-503-2124</div>
-            <!-- <div class="footer-images">
-                <img src="./images/facebook-icon.png" alt="Facebook icon">
-                <img src="./images/instagram-icon.png" alt="Instagram icon">
-            </div> -->
+            <a href="tel:802-503-2124">802-503-2124</a>
         </div>
-
         <div class="alchemy">
             <img src="./images/copyright-icon.png">
             <p>&nbsp;2020 Alchemy Web Designs</p>
         </div>
     </div>
 
+    <!-- <script>
+        function doUpdate() {
+            window.location.href = "./update/index.php";
+        }
+    </script> -->
 
 </body>
 

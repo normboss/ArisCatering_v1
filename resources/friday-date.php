@@ -1,1 +1,1 @@
-Friday, Oct 23
+Fri, Oct 23

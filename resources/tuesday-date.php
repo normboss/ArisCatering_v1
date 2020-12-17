@@ -1,1 +1,1 @@
-Tuesday, Oct 20
+Tues, Oct 20

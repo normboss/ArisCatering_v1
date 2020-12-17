@@ -1,1 +1,1 @@
-Monday, Oct 19
+Mon, Oct 19

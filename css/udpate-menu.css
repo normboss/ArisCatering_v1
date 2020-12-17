@@ -56,6 +56,38 @@ main {
   padding-top: 10px;
 }
 
+main nav {
+  background-color: #e8e2d9;
+  max-width: 1280pc;
+  width: 100%;
+  margin-top: 0;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  font: normal normal normal 12px/35px "BioRhyme Expanded";
+  letter-spacing: 0px;
+  color: #020100;
+}
+
+main nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+main nav ul li {
+  padding-right: 29px;
+  text-align: left;
+  font: normal normal normal 14px/49px Arial;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+main nav ul li a {
+  text-decoration: none;
+}
+
 main .top-section {
   background-color: #0000004d;
   width: 100%;
@@ -175,6 +207,45 @@ main .top-section .left-part .catering {
 @media screen and (max-width: 500px) {
   main .top-section .left-part .catering {
     font-size: 45px;
+  }
+}
+
+main .top-section .left-part .take-out {
+  grid-area: delicious;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  font: normal normal bold 24px "BioRhyme Expanded";
+  letter-spacing: 0px;
+  color: #020100;
+  opacity: 1;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section .left-part .take-out {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .top-section .left-part .take-out {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  main .top-section .left-part .take-out {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main .top-section .left-part .take-out {
+    line-height: 1.4;
   }
 }
 
@@ -349,12 +420,11 @@ main .menu-section {
 
 main .menu-section .menu-header {
   text-align: left;
-  width: 80%;
+  width: 90%;
   font: normal normal normal 60px/60px CHAWP;
   font-family: CHAWP, cursive;
   letter-spacing: 0.62px;
   color: #ffffff;
-  text-transform: uppercase;
   opacity: 1;
   padding-left: 30px;
   display: flex;
@@ -366,9 +436,35 @@ main .menu-section .menu-header {
   margin-bottom: 50px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   main .menu-section .menu-header {
     font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main .menu-section .menu-header {
+    font-size: 35px;
+  }
+}
+
+main .menu-section .menu-header img {
+  width: 50%;
+  min-width: 200px;
+  box-shadow: 0px 15px 18px #00000099;
+  border: 12px solid #ffffff;
+  transform: matrix(0.99, -0.12, 0.12, 0.99, 0, 0);
+  position: relative;
+  top: 0px;
+  left: 0px;
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 400px) {
+  main .menu-section .menu-header img {
+    margin: 0 auto;
+    top: -25px;
   }
 }
 
@@ -376,10 +472,9 @@ main .menu-section .menu-header .upload-image {
   outline: 5px dashed red;
   width: 84%;
   text-align: left;
-  font: normal normal normal 43px/60px Itim;
+  font: normal normal normal 43px/40px Itim;
   letter-spacing: 0px;
   color: #ffffff;
-  text-transform: lowercase;
   opacity: 1;
   background-image: url("../images/blackboard2-cropped.png");
   background-size: cover;
@@ -401,6 +496,7 @@ main .menu-section .menu-header .upload-image input {
 @media screen and (max-width: 500px) {
   main .menu-section .menu-header .upload-image {
     width: 95%;
+    font-size: 32px;
   }
 }
 
@@ -409,7 +505,6 @@ main .menu-section .menu-header .rotate-image {
   font: normal normal normal 43px/60px Itim;
   letter-spacing: 0px;
   color: #ffffff;
-  text-transform: lowercase;
   opacity: 1;
   font-size: 30px;
 }
@@ -422,7 +517,7 @@ main .menu-section .menu-header .rotate-image input {
 main .menu-section .menu-item {
   text-align: left;
   margin-bottom: 50px;
-  width: 80%;
+  width: 90%;
 }
 
 @media screen and (max-width: 900px) {
@@ -457,16 +552,17 @@ main .menu-section .menu-item .day-header textarea {
 
 @media screen and (max-width: 500px) {
   main .menu-section .menu-item .day-header textarea {
-    width: 95%;
+    width: 100%;
+    font-size: 25px;
   }
 }
 
 main .menu-section .menu-item .meal-summary textarea {
   outline: 5px dashed red;
   width: 80%;
-  height: 160px;
+  height: 150px;
   text-align: left;
-  font: normal normal normal 62px/60px CHAWP;
+  font: normal normal normal 42px CHAWP;
   letter-spacing: 0.62px;
   color: #ffffff;
   text-transform: uppercase;
@@ -481,6 +577,7 @@ main .menu-section .menu-item .meal-summary textarea {
 @media screen and (max-width: 900px) {
   main .menu-section .menu-item .meal-summary textarea {
     width: 90%;
+    font-size: 35px;
   }
 }
 
@@ -493,7 +590,7 @@ main .menu-section .menu-item .meal-summary textarea {
 @media screen and (max-width: 500px) {
   main .menu-section .menu-item .meal-summary textarea {
     width: 95%;
-    font-size: 32px;
+    font-size: 25px;
     line-height: 1.3;
   }
 }
@@ -504,7 +601,7 @@ main .menu-section .menu-item .meal-content textarea {
   margin-left: 30px;
   height: 200px;
   text-align: left;
-  font: normal normal normal 43px/60px Itim;
+  font: normal normal normal 30px Itim;
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
@@ -714,5 +811,38 @@ main .footer .copy2 {
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
+}
+
+main .footer .phone-etc {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+main .footer .phone-etc a {
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  font: normal normal bold 54px/49px Times New Roman;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  main .footer .phone-etc {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main .footer .phone-etc {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    align-self: center;
+  }
 }
 /*# sourceMappingURL=udpate-menu.css.map */
