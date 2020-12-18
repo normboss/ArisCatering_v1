@@ -134,6 +134,8 @@ function resizeImage($filename)
         $source = imagecreatefromgif($filename);
     }
 
+    array_map('unlink', glob("../images/resizedImage*.*"));
+
     // Output
     // $resizedImage = "../images/resizedImage.jpg";
     $resizedImage = "../images/resizedImage" . RandomString() . ".jpg";

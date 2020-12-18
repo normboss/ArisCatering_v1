@@ -60,7 +60,6 @@ main {
         // min-width: 900px;
         margin-top: 0;
         height: auto; //500px;
-        // height: 500px;
         padding-bottom: 25px;
         // width: 1280px;
         // padding-left: 100px;
@@ -351,7 +350,6 @@ main {
                 .take-out {
                     // outline: 3px solid red;
                     grid-area: delicious;
-
                     width: 80%;
                     display: flex;
                     text-align: left;
@@ -361,7 +359,7 @@ main {
                     letter-spacing: 0px;
                     color: #020100;
                     opacity: 1;
-                    line-height: 1.2;
+                    // line-height: 1.2;
                     // margin-top: 50px;
                     text-align: left;
                     font: normal normal normal 15px/22px BioRhyme Expanded;
@@ -731,6 +729,46 @@ main {
                     // }
                 }
 
+                .delivery {
+                    // outline: 3px solid red;
+                    grid-area: pickup;
+
+                    width: 100%;
+                    display: flex;
+                    justify-self: center;
+                    align-items: center;
+                    text-align: center;
+                    font: normal normal normal 18px/30px BioRhyme Expanded;
+                    letter-spacing: 0px;
+                    color: #000000;
+                    opacity: 1;
+                    // line-height: 1.5;
+
+                    text-align: center;
+                    font: normal normal normal 17px/30px BioRhyme Expanded;
+                    letter-spacing: 0px;
+                    color: #000000;
+                    opacity: 1;
+
+                    @include max-width-mixin(1200px) {
+                        // width: 80%;
+                        font-size: 16px;
+                    }
+                    @include max-width-mixin(1000px) {
+                        font-size: 16px;
+                        line-height: 1.5;
+                        margin-bottom: 10px;
+                        width: 95%;
+                    }
+                    @include max-width-mixin(750px) {
+                        // width: 80%;
+                        justify-self: center;
+                        text-align: center;
+                        // margin-bottom: 15px;
+                        // line-height: 1.8;
+                    }
+                }
+
                 .phone-number {
                     // outline: 3px solid red;
 
@@ -748,7 +786,7 @@ main {
 
                     @include max-width-mixin(1100px) {
                         margin-top: 10px;
-                        margin-bottom: 0px;
+                        // margin-bottom: 0px;
                     }
                     @include max-width-mixin(1000px) {
                         font-size: 35px;
@@ -773,46 +811,6 @@ main {
                     // }
                 }
 
-                .delivery {
-                    // outline: 3px solid red;
-                    grid-area: pickup;
-
-                    width: 100%;
-                    display: flex;
-                    justify-self: center;
-                    align-items: center;
-                    text-align: center;
-                    font: normal normal normal 18px/30px BioRhyme Expanded;
-                    letter-spacing: 0px;
-                    color: #000000;
-                    opacity: 1;
-                    // line-height: 1.5;
-
-                    text-align: center;
-                    font: normal normal normal 17px/30px BioRhyme Expanded;
-                    letter-spacing: 0px;
-                    color: #000000;
-                    opacity: 1;
-
-                    @include max-width-mixin(1150px) {
-                        // width: 80%;
-                        font-size: 16px;
-                    }
-                    @include max-width-mixin(1000px) {
-                        font-size: 16px;
-                        line-height: 1.5;
-                        margin-bottom: 10px;
-                        width: 95%;
-                    }
-                    @include max-width-mixin(750px) {
-                        // width: 80%;
-                        justify-self: center;
-                        text-align: center;
-                        // margin-bottom: 15px;
-                        // line-height: 1.8;
-                    }
-                }
-
                 .orders {
                     // outline: 3px solid red;
                     width: 100%;
@@ -822,15 +820,15 @@ main {
                     letter-spacing: 0px;
                     color: #020100;
                     opacity: 1;
-                    padding-top: 25px;
+                    padding-top: 20px;
                     position: relative;
                     // top: 3px;
 
                     @include max-width-mixin(1100px) {
                         margin-top: 0; //15px;
-                        padding-top: 15px;
+                        padding-top: 0; //15px;
                     }
-                    @include max-width-mixin(1150px) {
+                    @include max-width-mixin(1200px) {
                         font-size: 14px;
                     }
                     @include max-width-mixin(900px) {

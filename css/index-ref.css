@@ -1,0 +1,1280 @@
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme+Expanded&family=Leckerli+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme+Expanded&family=Leckerli+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@font-face {
+  font-family: remedy;
+  src: local("C:/xampp/htdocs/ArisCatering/files/fonts/Funstuff-Bold.ttf.woff");
+}
+
+@font-face {
+  font-family: "Funstuff-Bold";
+  src: url("Funstuff-Bold.ttf.woff") format("woff"), url("Funstuff-Bold.ttf.svg#Funstuff-Bold") format("svg"), url("Funstuff-Bold.ttf.eot"), url("Funstuff-Bold.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CHAWP;
+  src: url("chawp.otf");
+  src: url("chawp.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Blenda Script";
+  src: url("Blenda Script.otf");
+}
+
+@font-face {
+  font-family: remedy;
+  src: local("C:/xampp/htdocs/ArisCatering/files/fonts/Funstuff-Bold.ttf.woff");
+}
+
+@font-face {
+  font-family: "Funstuff-Bold";
+  src: url("Funstuff-Bold.ttf.woff") format("woff"), url("Funstuff-Bold.ttf.svg#Funstuff-Bold") format("svg"), url("Funstuff-Bold.ttf.eot"), url("Funstuff-Bold.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CHAWP;
+  src: url("chawp.otf");
+  src: url("chawp.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main nav {
+  background-color: #e8e2d9;
+  max-width: 1280pc;
+  width: 100%;
+  margin-top: 0;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  font: normal normal normal 12px/35px "BioRhyme Expanded";
+  letter-spacing: 0px;
+  color: #020100;
+}
+
+main nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+main nav ul li {
+  padding-right: 29px;
+  text-align: left;
+  font: normal normal normal 14px/49px Arial;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  color: #000000;
+  opacity: 1;
+}
+
+main nav ul li a {
+  text-decoration: none;
+}
+
+main .top-section {
+  background-color: #e8e2d9;
+  max-width: 1280pc;
+  width: 100%;
+  margin-top: 0;
+  height: auto;
+  padding-bottom: 25px;
+}
+
+main .top-section header {
+  margin: 0 auto;
+  width: 84%;
+  height: auto;
+  display: flex;
+}
+
+@media screen and (max-width: 900px) {
+  main .top-section header {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  main .top-section header {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  main .top-section header {
+    flex-direction: column;
+  }
+}
+
+main .top-section header .left-side {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 25px;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+@media screen and (max-width: 750px) {
+  main .top-section header .left-side {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  main .top-section header .left-side {
+    padding-left: 10px;
+  }
+}
+
+main .top-section header .left-side .cookin-and-logo1 {
+  display: grid;
+  grid-template-areas: "cookin	logo	blank" "cookin	logo	blank" "cookin	logo	blank" "catering	catering	catering";
+  justify-content: center;
+  justify-self: center;
+}
+
+main .top-section header .left-side .cookin-and-logo1 .cookin {
+  grid-area: cookin;
+  padding-left: 0;
+  position: relative;
+  text-align: left;
+  font: normal normal normal 50px/50px Blenda Script;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 5px;
+}
+
+main .top-section header .left-side .cookin-and-logo1 .cookin .cookin1 {
+  line-height: 1.1;
+}
+
+@media screen and (max-width: 1200px) {
+  main .top-section header .left-side .cookin-and-logo1 .cookin {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  main .top-section header .left-side .cookin-and-logo1 .cookin {
+    font-size: 40px;
+    line-height: 1.3;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  main .top-section header .left-side .cookin-and-logo1 .cookin {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  main .top-section header .left-side .cookin-and-logo1 .cookin {
+    font-size: 33px;
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  main .top-section header .left-side .cookin-and-logo1 .cookin {
+    font-size: 52px;
+    line-height: 1.2;
+    padding-bottom: 5px;
+  }
+  main .top-section header .left-side .cookin-and-logo1 .cookin .cookin1 {
+    line-height: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .top-section header .left-side .cookin-and-logo1 .cookin {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .top-section header .left-side .cookin-and-logo1 .cookin {
+    width: 70%;
+    font-size: 38px;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+}
+
+main .top-section header .left-side .cookin-and-logo1 .logo {
+  grid-area: logo;
+  align-self: end;
+  min-width: 100px;
+}
+
+@media screen and (max-width: 1000px) {
+  main .top-section header .left-side .cookin-and-logo1 .logo {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .top-section header .left-side .cookin-and-logo1 .logo {
+    padding-right: 0;
+  }
+}
+
+main .top-section header .left-side .cookin-and-logo1 .catering {
+  grid-area: catering;
+  text-align: left;
+  font: normal normal normal 82px Blenda Script;
+  letter-spacing: 0px;
+  color: #f23816;
+  color: #020100;
+  opacity: 1;
+  position: relative;
+  top: -10px;
+}
+
+@media screen and (max-width: 1200px) {
+  main .top-section header .left-side .cookin-and-logo1 .catering {
+    font-size: 75px;
+    top: -12px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  main .top-section header .left-side .cookin-and-logo1 .catering {
+    font-size: 65px;
+    top: -17px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .top-section header .left-side .cookin-and-logo1 .catering {
+    font-size: 60px;
+    top: -20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .top-section header .left-side .cookin-and-logo1 .catering {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  main .top-section header .left-side .cookin-and-logo1 .catering {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main .top-section header .left-side .cookin-and-logo1 .catering {
+    padding-top: 15px;
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  main .top-section header .left-side .cookin-and-logo1 .catering {
+    font-size: 80px;
+    top: -30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .top-section header .left-side .cookin-and-logo1 .catering {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .top-section header .left-side .cookin-and-logo1 .catering {
+    font-size: 60px;
+    margin-top: 20px;
+    line-height: 0.9;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  main .top-section header .left-side .cookin-and-logo1 .catering {
+    font-size: 40px;
+  }
+}
+
+main .top-section header .left-side .cookin-and-logo {
+  display: flex;
+}
+
+main .top-section header .left-side .cookin-and-logo .cookin {
+  grid-area: cookin;
+  text-align: left;
+  font: normal normal normal 62px/63px Blenda Script;
+  letter-spacing: 0px;
+  line-height: 1;
+  color: #f23816;
+  color: #020100;
+  opacity: 1;
+  padding-left: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 1200px) {
+  main .top-section header .left-side .cookin-and-logo .cookin {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  main .top-section header .left-side .cookin-and-logo .cookin {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  main .top-section header .left-side .cookin-and-logo .cookin {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  main .top-section header .left-side .cookin-and-logo .cookin {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .top-section header .left-side .cookin-and-logo .cookin {
+    width: 70%;
+  }
+}
+
+main .top-section header .left-side .cookin-and-logo .logo {
+  grid-area: logo;
+  align-self: end;
+  min-width: 100px;
+}
+
+@media screen and (max-width: 1000px) {
+  main .top-section header .left-side .cookin-and-logo .logo {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .top-section header .left-side .cookin-and-logo .logo {
+    padding-right: 0;
+  }
+}
+
+main .top-section header .left-side .take-out {
+  grid-area: delicious;
+  width: 80%;
+  display: flex;
+  text-align: left;
+  align-self: flex-start;
+  justify-self: flex-start;
+  font: normal normal bold 24px "BioRhyme Expanded";
+  letter-spacing: 0px;
+  color: #020100;
+  opacity: 1;
+  line-height: 1.2;
+  text-align: left;
+  font: normal normal normal 15px/22px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section header .left-side .take-out {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .top-section header .left-side .take-out {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  main .top-section header .left-side .take-out {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main .top-section header .left-side .take-out {
+    line-height: 1.4;
+  }
+}
+
+main .top-section header .left-side .hollis {
+  grid-area: hollis;
+  width: 100%;
+  align-self: end;
+  display: flex;
+  align-self: flex-start;
+  text-align: left;
+  font: normal normal normal 15px/41px "BioRhyme Expanded";
+  letter-spacing: 0px;
+  color: #020100;
+  opacity: 1;
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 900px) {
+  main .top-section header .left-side .hollis {
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  main .top-section header .left-side .hollis {
+    margin-bottom: 0;
+    padding-top: 10px;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+main .top-section header .right-side {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media screen and (max-width: 750px) {
+  main .top-section header .right-side {
+    margin-top: 20px;
+  }
+}
+
+main .top-section header .right-side .delicious {
+  grid-area: delicious;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  font: normal normal normal 18px/35px "BioRhyme Expanded";
+  letter-spacing: 0px;
+  color: #020100;
+  opacity: 1;
+  line-height: 1.8;
+  text-align: center;
+  font: normal normal normal 20px/33px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section header .right-side .delicious {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .top-section header .right-side .delicious {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  main .top-section header .right-side .delicious {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main .top-section header .right-side .delicious {
+    line-height: 1.4;
+  }
+}
+
+main .top-section header .right-side .price1 {
+  grid-area: price;
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+  position: relative;
+  align-items: center;
+  display: grid;
+  grid-template-areas: "only dollars cents asteric pickup";
+  justify-content: center;
+  justify-self: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 900px) {
+  main .top-section header .right-side .price1 {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .top-section header .right-side .price1 {
+    height: 80px;
+  }
+}
+
+main .top-section header .right-side .price1 .only {
+  grid-area: only;
+  align-items: center;
+  text-align: left;
+  font: normal normal bold 63px/59px Times New Roman;
+  letter-spacing: 0px;
+  color: #f23816;
+  color: #020100;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section header .right-side .price1 .only {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .top-section header .right-side .price1 .only {
+    font-size: 35px;
+  }
+}
+
+main .top-section header .right-side .price1 .dollars {
+  grid-area: dollars;
+  text-align: left;
+  font: normal normal bold 67px/57px Times New Roman;
+  letter-spacing: 0px;
+  color: #f23816;
+  color: #020100;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section header .right-side .price1 .dollars {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .top-section header .right-side .price1 .dollars {
+    font-size: 35px;
+  }
+}
+
+main .top-section header .right-side .price1 .cents {
+  grid-area: cents;
+  text-align: left;
+  font: normal normal bold 44px/61px Times New Roman;
+  letter-spacing: 0px;
+  color: #f23816;
+  color: #020100;
+  text-transform: lowercase;
+  opacity: 1;
+  position: relative;
+  top: -10px;
+  left: -5px;
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section header .right-side .price1 .cents {
+    font-size: 30px;
+    top: -8px;
+    left: -2px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .top-section header .right-side .price1 .cents {
+    font-size: 20px;
+  }
+}
+
+main .top-section header .right-side .price1 .asteric {
+  grid-area: asteric;
+  text-align: left;
+  font: normal normal bold 35px/62px Times New Roman;
+  letter-spacing: 0px;
+  color: #f23816;
+  color: #020100;
+  text-transform: lowercase;
+  opacity: 1;
+  position: relative;
+  top: -15px;
+  left: -5px;
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section header .right-side .price1 .asteric {
+    font-size: 25px;
+    top: -10px;
+    left: -2px;
+  }
+}
+
+main .top-section header .right-side .price1 .pickup {
+  grid-area: pickup;
+  text-align: center;
+  font: normal normal normal 20px/33px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  position: relative;
+  top: 15px;
+}
+
+@media screen and (max-width: 1190px) {
+  main .top-section header .right-side .price1 .pickup {
+    left: 0px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section header .right-side .price1 .pickup {
+    top: 10px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section header .right-side .price1 .pickup {
+    top: 8px;
+  }
+}
+
+main .top-section header .right-side .price {
+  outline: 3px solid red;
+  grid-area: price;
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 900px) {
+  main .top-section header .right-side .price {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .top-section header .right-side .price {
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  main .top-section header .right-side .price {
+    justify-content: flex-start;
+  }
+}
+
+main .top-section header .right-side .price .price-block {
+  outline: 3px solid red;
+}
+
+main .top-section header .right-side .price .price-block .only {
+  align-items: center;
+  text-align: left;
+  font: normal normal bold 63px/59px Times New Roman;
+  letter-spacing: 0px;
+  color: #f23816;
+  color: #020100;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section header .right-side .price .price-block .only {
+    font-size: 50px;
+  }
+}
+
+main .top-section header .right-side .price .price-block .dollars {
+  text-align: left;
+  font: normal normal bold 67px/57px Times New Roman;
+  letter-spacing: 0px;
+  color: #f23816;
+  color: #020100;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section header .right-side .price .price-block .dollars {
+    font-size: 50px;
+  }
+}
+
+main .top-section header .right-side .price .price-block .cents {
+  text-align: left;
+  font: normal normal bold 44px/61px Times New Roman;
+  letter-spacing: 0px;
+  color: #f23816;
+  color: #020100;
+  text-transform: lowercase;
+  opacity: 1;
+  position: relative;
+  top: -16px;
+  left: -5px;
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section header .right-side .price .price-block .cents {
+    font-size: 30px;
+    top: -8px;
+  }
+}
+
+main .top-section header .right-side .price .price-block .asteric {
+  text-align: left;
+  font: normal normal bold 35px/62px Times New Roman;
+  letter-spacing: 0px;
+  color: #f23816;
+  color: #020100;
+  text-transform: lowercase;
+  opacity: 1;
+  position: relative;
+  top: -25px;
+  left: -10px;
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section header .right-side .price .price-block .asteric {
+    font-size: 25px;
+    top: -10px;
+  }
+}
+
+main .top-section header .right-side .price .pickup2 {
+  outline: 3px solid red;
+  text-align: center;
+  font: normal normal normal 20px/33px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  position: relative;
+  top: 15px;
+  left: -30px;
+}
+
+@media screen and (max-width: 1160px) {
+  main .top-section header .right-side .price .pickup2 {
+    top: 0;
+    left: 0;
+    display: block;
+    line-height: 1;
+    text-align: left;
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  main .top-section header .right-side .price .pickup2 {
+    font-size: 14px;
+  }
+}
+
+main .top-section header .right-side .phone-number {
+  text-align: center;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  font: normal normal bold 54px/49px Times New Roman;
+  letter-spacing: 0px;
+  color: #f23816;
+  color: #020100;
+  opacity: 1;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  main .top-section header .right-side .phone-number {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .top-section header .right-side .phone-number {
+    font-size: 35px;
+    margin-bottom: 0;
+  }
+}
+
+main .top-section header .right-side .phone-number a {
+  text-decoration: none;
+  color: #f23816;
+  color: #020100;
+}
+
+main .top-section header .right-side .delivery {
+  grid-area: pickup;
+  width: 100%;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+  font: normal normal normal 18px/30px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  text-align: center;
+  font: normal normal normal 17px/30px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section header .right-side .delivery {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .top-section header .right-side .delivery {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  main .top-section header .right-side .delivery {
+    justify-self: center;
+    text-align: center;
+  }
+}
+
+main .top-section header .right-side .orders {
+  width: 100%;
+  text-align: center;
+  font: normal normal normal 15px/22px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #020100;
+  opacity: 1;
+  padding-top: 25px;
+  position: relative;
+}
+
+@media screen and (max-width: 1100px) {
+  main .top-section header .right-side .orders {
+    margin-top: 0;
+    padding-top: 15px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  main .top-section header .right-side .orders {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  main .top-section header .right-side .orders {
+    width: 100%;
+  }
+}
+
+main .menu-section {
+  background-image: url("../images/blackboard2.jpg");
+  opacity: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+  padding-top: 30px;
+}
+
+main .menu-section button {
+  height: 30px;
+  position: relative;
+  top: -23px;
+  left: 15px;
+  color: red;
+}
+
+main .menu-section .menu-header {
+  width: 84%;
+  text-align: left;
+  font: normal normal normal 60px/60px cursive;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 1;
+  margin: 0 auto;
+  margin: 0 auto;
+  font: normal normal normal 62px/60px CHAWP;
+  font-family: CHAWP, cursive;
+  letter-spacing: 0.62px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 1;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  main .menu-section .menu-header {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main .menu-section .menu-header {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+}
+
+main .menu-section .menu-header p {
+  display: flex;
+  align-items: flex-end;
+}
+
+main .menu-section .menu-header img {
+  width: 60%;
+  box-shadow: 0px 15px 18px #00000099;
+  border: 12px solid #ffffff;
+  transform: matrix(0.99, -0.12, 0.12, 0.99, 0, 0);
+  position: relative;
+  top: 20px;
+  left: 0px;
+  margin-left: 100px;
+}
+
+@media screen and (max-width: 800px) {
+  main .menu-section .menu-header img {
+    top: 0;
+    width: 80%;
+    margin-left: 15px;
+  }
+}
+
+main .menu-section .menu-header .shredded-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  left: -25px;
+  top: -10px;
+}
+
+main .menu-section .menu-header .shredded-container .shredded {
+  text-transform: none;
+  text-align: left;
+  font: normal normal normal 27px/30px Itim;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+main .menu-section .menu-item {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+  width: 84%;
+  margin-bottom: 75px;
+}
+
+@media screen and (max-width: 900px) {
+  main .menu-section .menu-item {
+    width: 90%;
+  }
+}
+
+main .menu-section .menu-item .day-header {
+  text-align: left;
+  font: normal normal normal 43px/60px Itim;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 700px) {
+  main .menu-section .menu-item .day-header {
+    font-size: 30px;
+    line-height: 1;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main .menu-section .menu-item .day-header {
+    line-height: 0.9;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .menu-section .menu-item .day-header {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  main .menu-section .menu-item .day-header {
+    font-size: 20px;
+  }
+}
+
+main .menu-section .menu-item .meal-summary {
+  margin-top: 5px;
+  text-align: left;
+  font: normal normal normal 60px/60px CHAWP;
+  letter-spacing: 0.62px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 1;
+  padding-top: 5px;
+  line-height: 1.1;
+}
+
+@media screen and (max-width: 1100px) {
+  main .menu-section .menu-item .meal-summary {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main .menu-section .menu-item .meal-summary {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main .menu-section .menu-item .meal-summary {
+    font-size: 40px;
+    line-height: 1;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .menu-section .menu-item .meal-summary {
+    font-size: 30px;
+    line-height: 1;
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main .menu-section .menu-item .meal-summary {
+    font-size: 25px;
+  }
+}
+
+main .menu-section .menu-item .meal-content {
+  width: 100%;
+  text-align: left;
+  font: normal normal normal 38px/60px Itim;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  line-height: 1;
+}
+
+@media screen and (max-width: 1100px) {
+  main .menu-section .menu-item .meal-content {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main .menu-section .menu-item .meal-content {
+    font-size: 24px;
+    line-height: 0.9;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  main .menu-section .menu-item .meal-content {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .menu-section .menu-item {
+    margin-bottom: 50px;
+  }
+}
+
+.footer {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  padding-top: 36px;
+  padding-bottom: 40px;
+  height: auto;
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+  min-width: 300px;
+}
+
+.footer .copy1 {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+  font: normal normal normal 20px/32px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #f23816;
+  padding-bottom: 20px;
+  font: normal normal normal 19px/30px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+@media screen and (max-width: 450px) {
+  .footer .copy1 {
+    width: 95%;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .footer .copy1 {
+    font-size: 16px;
+  }
+}
+
+.footer .copy2 {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  font: normal normal normal 16px/28px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #676462;
+  opacity: 1;
+  opacity: 1;
+  font: normal normal normal 16px/27px BioRhyme Expanded;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+@media screen and (max-width: 450px) {
+  .footer .copy2 {
+    width: 95%;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .footer .copy2 {
+    font-size: 13px;
+  }
+}
+
+.footer .phone-etc {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer .phone-etc a {
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  font: normal normal bold 54px/49px Times New Roman;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer .phone-etc {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer .phone-etc {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    align-self: center;
+  }
+}
+
+.footer .footer-images {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer .footer-images img {
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .footer .footer-images img {
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 45%;
+  }
+}
+
+.alchemy {
+  margin: 0 auto;
+  width: 95%;
+  height: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.alchemy p {
+  text-align: left;
+  font: normal normal normal 14px/49px Arial;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+/*# sourceMappingURL=index-ref.css.map */

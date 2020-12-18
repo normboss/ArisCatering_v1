@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=BioRhyme+Expanded&family=Leckerli+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme+Expanded&family=Leckerli+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 @font-face {
   font-family: remedy;
   src: local("C:/xampp/htdocs/ArisCatering/files/fonts/Funstuff-Bold.ttf.woff");
@@ -23,6 +25,26 @@
 @font-face {
   font-family: "Blenda Script";
   src: url("Blenda Script.otf");
+}
+
+@font-face {
+  font-family: remedy;
+  src: local("C:/xampp/htdocs/ArisCatering/files/fonts/Funstuff-Bold.ttf.woff");
+}
+
+@font-face {
+  font-family: "Funstuff-Bold";
+  src: url("Funstuff-Bold.ttf.woff") format("woff"), url("Funstuff-Bold.ttf.svg#Funstuff-Bold") format("svg"), url("Funstuff-Bold.ttf.eot"), url("Funstuff-Bold.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CHAWP;
+  src: url("chawp.otf");
+  src: url("chawp.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 main {
@@ -380,7 +402,6 @@ main .top-section header .left-side .take-out {
   letter-spacing: 0px;
   color: #020100;
   opacity: 1;
-  line-height: 1.2;
   text-align: left;
   font: normal normal normal 15px/22px BioRhyme Expanded;
   letter-spacing: 0px;
@@ -787,40 +808,6 @@ main .top-section header .right-side .price .pickup2 {
   }
 }
 
-main .top-section header .right-side .phone-number {
-  text-align: center;
-  display: flex;
-  justify-self: center;
-  align-self: center;
-  font: normal normal bold 54px/49px Times New Roman;
-  letter-spacing: 0px;
-  color: #f23816;
-  color: #020100;
-  opacity: 1;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-@media screen and (max-width: 1100px) {
-  main .top-section header .right-side .phone-number {
-    margin-top: 10px;
-    margin-bottom: 0px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  main .top-section header .right-side .phone-number {
-    font-size: 35px;
-    margin-bottom: 0;
-  }
-}
-
-main .top-section header .right-side .phone-number a {
-  text-decoration: none;
-  color: #f23816;
-  color: #020100;
-}
-
 main .top-section header .right-side .delivery {
   grid-area: pickup;
   width: 100%;
@@ -839,7 +826,7 @@ main .top-section header .right-side .delivery {
   opacity: 1;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1200px) {
   main .top-section header .right-side .delivery {
     font-size: 16px;
   }
@@ -861,6 +848,39 @@ main .top-section header .right-side .delivery {
   }
 }
 
+main .top-section header .right-side .phone-number {
+  text-align: center;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  font: normal normal bold 54px/49px Times New Roman;
+  letter-spacing: 0px;
+  color: #f23816;
+  color: #020100;
+  opacity: 1;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  main .top-section header .right-side .phone-number {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .top-section header .right-side .phone-number {
+    font-size: 35px;
+    margin-bottom: 0;
+  }
+}
+
+main .top-section header .right-side .phone-number a {
+  text-decoration: none;
+  color: #f23816;
+  color: #020100;
+}
+
 main .top-section header .right-side .orders {
   width: 100%;
   text-align: center;
@@ -868,18 +888,18 @@ main .top-section header .right-side .orders {
   letter-spacing: 0px;
   color: #020100;
   opacity: 1;
-  padding-top: 25px;
+  padding-top: 20px;
   position: relative;
 }
 
 @media screen and (max-width: 1100px) {
   main .top-section header .right-side .orders {
     margin-top: 0;
-    padding-top: 15px;
+    padding-top: 0;
   }
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1200px) {
   main .top-section header .right-side .orders {
     font-size: 14px;
   }
