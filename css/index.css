@@ -526,8 +526,8 @@ main .top-section header .right-side .delicious {
 main .top-section header .right-side .price1 {
   grid-area: price;
   width: 100%;
-  height: 100px;
-  margin-top: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   position: relative;
   align-items: center;
   display: grid;
@@ -543,9 +543,10 @@ main .top-section header .right-side .price1 {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1150px) {
   main .top-section header .right-side .price1 {
-    height: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 
@@ -862,7 +863,7 @@ main .top-section header .right-side .phone-number {
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1150px) {
   main .top-section header .right-side .phone-number {
     margin-top: 10px;
   }
@@ -871,7 +872,8 @@ main .top-section header .right-side .phone-number {
 @media screen and (max-width: 1000px) {
   main .top-section header .right-side .phone-number {
     font-size: 35px;
-    margin-bottom: 0;
+    margin-bottom: 5px;
+    margin-top: 0px;
   }
 }
 
